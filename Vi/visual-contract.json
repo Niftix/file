@@ -1,0 +1,5330 @@
+{
+  "schema_version": 1,
+  "tool_version": "0.1.0",
+  "generated_at": "2026-09-11T15:50:43.766535+00:00",
+  "champion": "Vi",
+  "skin": "Base",
+  "input_root": "/Users/mathieuv/Documents/Amazon/vi-visual-source/Vi",
+  "summary": {
+    "file_count": 463,
+    "inibin_count": 34,
+    "luaobj_count": 54,
+    "preload_count": 26,
+    "animation_count": 37,
+    "skeleton_count": 1,
+    "particle_count": 96,
+    "unresolved_dependency_count": 7
+  },
+  "contracts": {
+    "Q": {
+      "entrypoints": [
+        "viq"
+      ],
+      "related_spell_objects": [
+        "root",
+        "vipassivebuff",
+        "viq",
+        "viqanimations",
+        "viqdash",
+        "viqknockback",
+        "viqlaunch",
+        "viqlaunchsound",
+        "viqmarker",
+        "viqminion",
+        "viqminionhit",
+        "viqrefresh",
+        "viqvfx",
+        "viw",
+        "viwbuff",
+        "viwproc",
+        "viwshred",
+        "viwvisual"
+      ],
+      "phases": [
+        {
+          "phase": "cast",
+          "evidence": "INIBIN animation/timing",
+          "confidence": "high"
+        },
+        {
+          "phase": "channel_or_loop",
+          "evidence": "preload/ANM naming",
+          "confidence": "medium"
+        },
+        {
+          "phase": "movement_or_missile",
+          "evidence": "dependent spell graph",
+          "confidence": "medium"
+        },
+        {
+          "phase": "impact",
+          "evidence": "INIBIN/dependent spell",
+          "confidence": "high"
+        },
+        {
+          "phase": "winddown",
+          "evidence": "INIBIN animation",
+          "confidence": "high"
+        }
+      ],
+      "derived_timing": {
+        "cast_event_seconds": 0.25,
+        "cast_event_basis": "SpellData.CastFrame / Vi_Spell1 fps",
+        "confidence": "high",
+        "channel_duration_seconds": 1.25
+      },
+      "field_evidence": [
+        {
+          "field": "Sound_CastName",
+          "value": "none.wav",
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileBoneName",
+          "value": "root",
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "Sound_HitName",
+          "value": "none.wav",
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "AnimationWinddownName",
+          "value": "Spell1_Fire",
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "ChannelDuration",
+          "value": 1.25,
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "CastFrame",
+          "value": 7.5,
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "DelayCastOffsetPercent",
+          "value": 65535,
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "DelayTotalTimePercent",
+          "value": 65535,
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "UseAnimatorFramerate",
+          "value": true,
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileSpeed",
+          "value": "1500.0000",
+          "source": "Spells/ViQ.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "AnimationName",
+          "value": "Spell3",
+          "source": "Spells/ViQLaunch.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "DelayCastOffsetPercent",
+          "value": -0.5,
+          "source": "Spells/ViQLaunch.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "DelayTotalTimePercent",
+          "value": -0.5,
+          "source": "Spells/ViQLaunch.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "CastFrame",
+          "value": 1.9800000190734863,
+          "source": "Spells/ViQLaunch.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "MissileSpeed",
+          "value": "1200.0000",
+          "source": "Spells/ViQLaunch.inibin",
+          "confidence": "medium"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Vi_Spell1",
+          "path": "Skins/Base/Animations/Vi_Spell1.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 74180,
+          "declared_resource_size": 74168,
+          "joint_count": 98,
+          "frame_count": 50,
+          "frame_duration_seconds": 0.0333333,
+          "fps": 30.0,
+          "duration_seconds": 1.6667,
+          "confidence": "high"
+        },
+        {
+          "name": "Vi_Spell1_Idle",
+          "path": "Skins/Base/Animations/Vi_Spell1_Idle.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 45624,
+          "declared_resource_size": 45612,
+          "joint_count": 98,
+          "frame_count": 28,
+          "frame_duration_seconds": 0.0322581,
+          "fps": 31.0,
+          "duration_seconds": 0.9032,
+          "confidence": "high"
+        },
+        {
+          "name": "Vi_SPELL1_IdleIntro",
+          "path": "Skins/Base/Animations/Vi_SPELL1_IdleIntro.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 142728,
+          "declared_resource_size": 142716,
+          "joint_count": 98,
+          "frame_count": 60,
+          "frame_duration_seconds": 0.0333333,
+          "fps": 30.0,
+          "duration_seconds": 2.0,
+          "confidence": "high"
+        },
+        {
+          "name": "Vi_Spell1_Run",
+          "path": "Skins/Base/Animations/Vi_Spell1_Run.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 62156,
+          "declared_resource_size": 62144,
+          "joint_count": 98,
+          "frame_count": 37,
+          "frame_duration_seconds": 0.0333333,
+          "fps": 30.0,
+          "duration_seconds": 1.2333,
+          "confidence": "high"
+        },
+        {
+          "name": "Vi_Spell3",
+          "path": "Skins/Base/Animations/Vi_Spell3.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 90440,
+          "declared_resource_size": 90428,
+          "joint_count": 98,
+          "frame_count": 51,
+          "frame_duration_seconds": 0.0333333,
+          "fps": 30.0,
+          "duration_seconds": 1.7,
+          "confidence": "medium"
+        }
+      ],
+      "preload_dependencies": [
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_hit_1.troy",
+          "target": "vi_armorshred_hit_1.troy",
+          "resolved": true,
+          "source": "Spells/ViWVisual.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_hit_minion_1.troy",
+          "target": "vi_armorshred_hit_minion_1.troy",
+          "resolved": true,
+          "source": "Spells/ViWVisual.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_hit_2.troy",
+          "target": "vi_armorshred_hit_2.troy",
+          "resolved": true,
+          "source": "Spells/ViWVisual.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_hit_minion_2.troy",
+          "target": "vi_armorshred_hit_minion_2.troy",
+          "resolved": true,
+          "source": "Spells/ViWVisual.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_attack_speed_buff.troy",
+          "target": "vi_attack_speed_buff.troy",
+          "resolved": true,
+          "source": "Spells/ViWBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_e_attackspeed_knuckles.troy",
+          "target": "vi_e_attackspeed_knuckles.troy",
+          "resolved": true,
+          "source": "Spells/ViWBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_shield.troy",
+          "target": "vi_passive_shield.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_buff.troy",
+          "target": "vi_passive_buff.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_hand_l.troy",
+          "target": "vi_passive_hand_l.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_hand_r.troy",
+          "target": "vi_passive_hand_r.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_buff_deactivate.troy",
+          "target": "vi_passive_buff_deactivate.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "root",
+          "target": "root",
+          "resolved": false,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_q_channel_01.troy",
+          "target": "vi_q_channel_01.troy",
+          "resolved": true,
+          "source": "Spells/ViQVFX.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_q_channel_02.troy",
+          "target": "vi_q_channel_02.troy",
+          "resolved": true,
+          "source": "Spells/ViQVFX.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "root",
+          "target": "root",
+          "resolved": false,
+          "source": "Spells/ViQVFX.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_q_channel_l.troy",
+          "target": "vi_q_channel_l.troy",
+          "resolved": true,
+          "source": "Spells/ViQVFX.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqmarker",
+          "target": "viqmarker",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "vipassivebuff",
+          "target": "vipassivebuff",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viwproc",
+          "target": "viwproc",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viwvisual",
+          "target": "viwvisual",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viw",
+          "target": "viw",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqknockback",
+          "target": "viqknockback",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_q_tar.troy",
+          "target": "vi_q_tar.troy",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqminionhit",
+          "target": "viqminionhit",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqminion",
+          "target": "viqminion",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_q_minion_tar.troy",
+          "target": "vi_q_minion_tar.troy",
+          "resolved": true,
+          "source": "Spells/ViQDash.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viwbuff",
+          "target": "viwbuff",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_hold.troy",
+          "target": "vi_armorshred_hold.troy",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred.troy",
+          "target": "vi_armorshred.troy",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viwshred",
+          "target": "viwshred",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "vipassivebuff",
+          "target": "vipassivebuff",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_minion.troy",
+          "target": "vi_armorshred_minion.troy",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_dragon.troy",
+          "target": "vi_armorshred_dragon.troy",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqanimations",
+          "target": "viqanimations",
+          "resolved": true,
+          "source": "Spells/ViQ.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqlaunchsound",
+          "target": "viqlaunchsound",
+          "resolved": true,
+          "source": "Spells/ViQ.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqlaunch",
+          "target": "viqlaunch",
+          "resolved": true,
+          "source": "Spells/ViQ.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viq",
+          "target": "viq",
+          "resolved": true,
+          "source": "Spells/ViQ.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqvfx",
+          "target": "viqvfx",
+          "resolved": true,
+          "source": "Spells/ViQ.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqdash",
+          "target": "viqdash",
+          "resolved": true,
+          "source": "Spells/ViQ.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viqrefresh",
+          "target": "viqrefresh",
+          "resolved": true,
+          "source": "Spells/ViQ.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_q_expire.troy",
+          "target": "vi_q_expire.troy",
+          "resolved": true,
+          "source": "Spells/ViQ.preload"
+        }
+      ],
+      "particles": [
+        {
+          "reference": "vi_armorshred.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_dragon.troy",
+          "resolved_path": "Skins/Base/Particles/VI_ArmorShred_Dragon.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_hit_1.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred_Hit_1.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_hit_2.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred_Hit_2.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_hit_minion_1.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred_Hit_Minion_1.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_hit_minion_2.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred_Hit_Minion_2.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_hold.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred_hold.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_minion.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred_Minion.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_attack_speed_buff.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Attack_Speed_Buff.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_e_attackspeed_knuckles.troy",
+          "resolved_path": "Skins/Base/Particles/VI_E_AttackSpeed_Knuckles.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_buff.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Buff.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_buff_deactivate.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Buff_DeActivate.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_hand_l.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_passive_Hand_L.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_hand_r.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_passive_Hand_R.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_shield.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Shield.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_q_channel_01.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Q_Channel_01.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_q_channel_02.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Q_Channel_02.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_q_channel_l.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Q_Channel_L.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_q_expire.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Q_Expire.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_q_minion_tar.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Q_Minion_tar.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_q_tar.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Q_tar.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        }
+      ],
+      "particle_candidates_by_name": [
+        {
+          "name": "Vi_Q_Fist_Shockwave_L",
+          "path": "Skins/Base/Particles/Vi_Q_Fist_Shockwave_L.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_Q_mis",
+          "path": "Skins/Base/Particles/Vi_Q_mis.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_Q_mis_Child",
+          "path": "Skins/Base/Particles/Vi_Q_mis_Child.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_Q_Skin_Swap",
+          "path": "Skins/Base/Particles/Vi_Q_Skin_Swap.troybin",
+          "confidence": "low"
+        }
+      ],
+      "bone_validation": [
+        {
+          "name": "root",
+          "present_in_skeleton": true
+        }
+      ],
+      "lua_constants": [
+        {
+          "path": "Spells/ViPassiveBuff.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViPassive.dds",
+            "ViPassiveBuff"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQ.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "CanHitCaster",
+            "CanHitEnemies",
+            "CanHitFriends",
+            "CanHitSameTarget",
+            "CanHitSameTargetConsecutively",
+            "ChainMissileParameters",
+            "DoesntBreakShields",
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "MaximumHits",
+            "NotSingleTargetSpell",
+            "OnPreDamagePriority",
+            "SpellToggleSlot",
+            "VarusQCharging.dds",
+            "ViQ"
+          ],
+          "numbers": [
+            0.0,
+            1.0,
+            3.0,
+            4.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQAnimations.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "NonDispellable",
+            "NotSingleTargetSpell",
+            "SpellToggleSlot",
+            "VarusQ",
+            "VarusQ.dds"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQDash.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "IsDeathRecapSource"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQKnockback.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViQ.dds",
+            "ViQKnockBack"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQLaunch.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "NonDispellable",
+            "NotSingleTargetSpell",
+            "SpellToggleSlot",
+            "ViQ",
+            "ViQ.dds"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQLaunchSound.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "NonDispellable",
+            "NotSingleTargetSpell",
+            "SpellToggleSlot",
+            "VarusQ",
+            "VarusQ.dds"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQMarker.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQMinion.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQMinionHit.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQMissile.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "NotSingleTargetSpell",
+            "TriggersSpellCasts"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQRefresh.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViQVFX.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViW.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "IsDeathRecapSource",
+            "PersistsThroughDeath",
+            "ViW",
+            "ViW.dds"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWBuff.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViW2.dds",
+            "ViWBuff"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWProc.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViW2.dds",
+            "ViWProc"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWShred.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViW",
+            "ViW.dds"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWVisual.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "IsDeathRecapSource"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        }
+      ],
+      "limitations": [
+        "Lua bytecode constants are evidence, not a decompiled execution order.",
+        "Filename-based ANM-to-slot mapping must be reviewed when a champion uses non-standard clip names."
+      ]
+    },
+    "W": {
+      "entrypoints": [
+        "viw"
+      ],
+      "related_spell_objects": [
+        "root",
+        "vipassivebuff",
+        "viw",
+        "viwbuff",
+        "viwshred"
+      ],
+      "phases": [],
+      "derived_timing": {},
+      "field_evidence": [
+        {
+          "field": "HitBoneName",
+          "value": "C_BUFFBONE_GLB_HEAD_LOC",
+          "source": "Spells/ViW.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileBoneName",
+          "value": "R_hand",
+          "source": "Spells/ViW.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "DelayCastOffsetPercent",
+          "value": -0.5,
+          "source": "Spells/ViW.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "DelayTotalTimePercent",
+          "value": -0.5,
+          "source": "Spells/ViW.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "CastFrame",
+          "value": 1.9800000190734863,
+          "source": "Spells/ViW.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileSpeed",
+          "value": "1200.0000",
+          "source": "Spells/ViW.inibin",
+          "confidence": "high"
+        }
+      ],
+      "animations": [],
+      "preload_dependencies": [
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_attack_speed_buff.troy",
+          "target": "vi_attack_speed_buff.troy",
+          "resolved": true,
+          "source": "Spells/ViWBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_e_attackspeed_knuckles.troy",
+          "target": "vi_e_attackspeed_knuckles.troy",
+          "resolved": true,
+          "source": "Spells/ViWBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_shield.troy",
+          "target": "vi_passive_shield.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_buff.troy",
+          "target": "vi_passive_buff.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_hand_l.troy",
+          "target": "vi_passive_hand_l.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_hand_r.troy",
+          "target": "vi_passive_hand_r.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_buff_deactivate.troy",
+          "target": "vi_passive_buff_deactivate.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "root",
+          "target": "root",
+          "resolved": false,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viwbuff",
+          "target": "viwbuff",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_hold.troy",
+          "target": "vi_armorshred_hold.troy",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred.troy",
+          "target": "vi_armorshred.troy",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viwshred",
+          "target": "viwshred",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "vipassivebuff",
+          "target": "vipassivebuff",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_minion.troy",
+          "target": "vi_armorshred_minion.troy",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_armorshred_dragon.troy",
+          "target": "vi_armorshred_dragon.troy",
+          "resolved": true,
+          "source": "Spells/ViW.preload"
+        }
+      ],
+      "particles": [
+        {
+          "reference": "vi_armorshred.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_dragon.troy",
+          "resolved_path": "Skins/Base/Particles/VI_ArmorShred_Dragon.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_hold.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred_hold.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_armorshred_minion.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_ArmorShred_Minion.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_attack_speed_buff.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Attack_Speed_Buff.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_e_attackspeed_knuckles.troy",
+          "resolved_path": "Skins/Base/Particles/VI_E_AttackSpeed_Knuckles.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_buff.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Buff.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_buff_deactivate.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Buff_DeActivate.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_hand_l.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_passive_Hand_L.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_hand_r.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_passive_Hand_R.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_shield.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Shield.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        }
+      ],
+      "particle_candidates_by_name": [],
+      "bone_validation": [
+        {
+          "name": "C_BUFFBONE_GLB_HEAD_LOC",
+          "present_in_skeleton": true
+        },
+        {
+          "name": "R_hand",
+          "present_in_skeleton": true
+        }
+      ],
+      "lua_constants": [
+        {
+          "path": "Spells/ViPassiveBuff.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViPassive.dds",
+            "ViPassiveBuff"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViW.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "IsDeathRecapSource",
+            "PersistsThroughDeath",
+            "ViW",
+            "ViW.dds"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWBuff.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViW2.dds",
+            "ViWBuff"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWMarker.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "PersistsThroughDeath",
+            "SpellToggleSlot",
+            "ViW.dds",
+            "ViWMarker"
+          ],
+          "numbers": [
+            2.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWProc.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViW2.dds",
+            "ViWProc"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWShred.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViW",
+            "ViW.dds"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViWVisual.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "IsDeathRecapSource"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        }
+      ],
+      "limitations": [
+        "Lua bytecode constants are evidence, not a decompiled execution order.",
+        "Filename-based ANM-to-slot mapping must be reviewed when a champion uses non-standard clip names."
+      ]
+    },
+    "E": {
+      "entrypoints": [
+        "vie"
+      ],
+      "related_spell_objects": [
+        "root",
+        "vie",
+        "vipassivebuff"
+      ],
+      "phases": [
+        {
+          "phase": "cast",
+          "evidence": "INIBIN animation/timing",
+          "confidence": "high"
+        },
+        {
+          "phase": "impact",
+          "evidence": "INIBIN/dependent spell",
+          "confidence": "high"
+        }
+      ],
+      "derived_timing": {},
+      "field_evidence": [
+        {
+          "field": "HitEffectName",
+          "value": "Malphite_Enrage_glow.troy",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "HitBoneName",
+          "value": "root",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "AfterEffectName",
+          "value": "Malphite_Enrage_glow.troy",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "AnimationName",
+          "value": "Spell2",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "Sound_CastName",
+          "value": "Annie_Incinerate_3.wav",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileBoneName",
+          "value": "R_hand",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileEffect",
+          "value": "AnnieBasicAttack_mis.troy",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "Sound_HitName",
+          "value": "none.wav",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "DelayCastOffsetPercent",
+          "value": -0.5,
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "DelayTotalTimePercent",
+          "value": -0.5,
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "CastFrame",
+          "value": ".5",
+          "source": "Spells/ViE.inibin",
+          "confidence": "high"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Vi_Spell2",
+          "path": "Skins/Base/Animations/Vi_Spell2.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 89012,
+          "declared_resource_size": 89000,
+          "joint_count": 98,
+          "frame_count": 51,
+          "frame_duration_seconds": 0.0333333,
+          "fps": 30.0,
+          "duration_seconds": 1.7,
+          "confidence": "high"
+        },
+        {
+          "name": "Vi_Spell2_A",
+          "path": "Skins/Base/Animations/Vi_Spell2_A.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 92096,
+          "declared_resource_size": 92084,
+          "joint_count": 98,
+          "frame_count": 51,
+          "frame_duration_seconds": 0.0333333,
+          "fps": 30.0,
+          "duration_seconds": 1.7,
+          "confidence": "high"
+        }
+      ],
+      "preload_dependencies": [
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_shield.troy",
+          "target": "vi_passive_shield.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_buff.troy",
+          "target": "vi_passive_buff.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_hand_l.troy",
+          "target": "vi_passive_hand_l.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_hand_r.troy",
+          "target": "vi_passive_hand_r.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_passive_buff_deactivate.troy",
+          "target": "vi_passive_buff_deactivate.troy",
+          "resolved": true,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "root",
+          "target": "root",
+          "resolved": false,
+          "source": "Spells/ViPassiveBuff.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_e_activate_hands_r.troy",
+          "target": "vi_e_activate_hands_r.troy",
+          "resolved": true,
+          "source": "Spells/ViE.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_e_activate_hands_l.troy",
+          "target": "vi_e_activate_hands_l.troy",
+          "resolved": true,
+          "source": "Spells/ViE.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "vipassivebuff",
+          "target": "vipassivebuff",
+          "resolved": true,
+          "source": "Spells/ViE.preload"
+        }
+      ],
+      "particles": [
+        {
+          "reference": "anniebasicattack_mis.troy",
+          "resolved_path": null,
+          "confidence": "medium",
+          "skin_scope": "unresolved"
+        },
+        {
+          "reference": "malphite_enrage_glow.troy",
+          "resolved_path": null,
+          "confidence": "medium",
+          "skin_scope": "unresolved"
+        },
+        {
+          "reference": "vi_e_activate_hands_l.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_E_activate_hands_L.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_e_activate_hands_r.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_E_activate_hands_R.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_buff.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Buff.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_buff_deactivate.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Buff_DeActivate.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_hand_l.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_passive_Hand_L.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_hand_r.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_passive_Hand_R.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_passive_shield.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_Passive_Shield.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        }
+      ],
+      "particle_candidates_by_name": [
+        {
+          "name": "Vi_E_activate_hands",
+          "path": "Skins/Base/Particles/Vi_E_activate_hands.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "VI_E_AttackSpeed_Knuckles",
+          "path": "Skins/Base/Particles/VI_E_AttackSpeed_Knuckles.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_E_Cas",
+          "path": "Skins/Base/Particles/Vi_E_Cas.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_E_Minion_tar",
+          "path": "Skins/Base/Particles/Vi_E_Minion_tar.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_E_Shockwave_Child",
+          "path": "Skins/Base/Particles/Vi_E_Shockwave_Child.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_E_Shockwave_tar",
+          "path": "Skins/Base/Particles/Vi_E_Shockwave_tar.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_E_tar",
+          "path": "Skins/Base/Particles/Vi_E_tar.troybin",
+          "confidence": "low"
+        }
+      ],
+      "bone_validation": [
+        {
+          "name": "R_hand",
+          "present_in_skeleton": true
+        },
+        {
+          "name": "root",
+          "present_in_skeleton": true
+        }
+      ],
+      "lua_constants": [
+        {
+          "path": "Spells/ViE.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "SpellFXOverrideSkins",
+            "ViE",
+            "ViE2.dds",
+            "ViRacer"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViEAnimation2.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViEArea.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "DoesntTriggerSpellCasts",
+            "ForcePulse",
+            "IsDamagingSpell",
+            "Kassadin_ForcePulse.dds",
+            "NotSingleTargetSpell"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViEAttack.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "IsDeathRecapSource"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViEFx.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "CastingBreaksStealth",
+            "DoesntBreakShields",
+            "DoesntTriggerSpellCasts",
+            "game_floatingtext_Slowed",
+            "IsDamagingSpell",
+            "NotSingleTargetSpell",
+            "PopupMessage1",
+            "SpellDamageRatio",
+            "SpellFXOverrideSkins",
+            "TriggersSpellCasts",
+            "ViRacer"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViEMarker.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViPassiveBuff.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "ViPassive.dds",
+            "ViPassiveBuff"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        }
+      ],
+      "limitations": [
+        "Lua bytecode constants are evidence, not a decompiled execution order.",
+        "Filename-based ANM-to-slot mapping must be reviewed when a champion uses non-standard clip names."
+      ]
+    },
+    "R": {
+      "entrypoints": [
+        "vir"
+      ],
+      "related_spell_objects": [
+        "expirationtimer",
+        "suppression",
+        "unstoppableforcemarker",
+        "vir",
+        "virdunk",
+        "virdunkghost",
+        "virdunkmarker",
+        "virdunkring",
+        "virdunkstun",
+        "virdunktarget",
+        "virdunktargetself",
+        "virdunkvfx",
+        "virhit",
+        "virknockback",
+        "virtarget",
+        "virtracker",
+        "virvoice",
+        "viteamwork"
+      ],
+      "phases": [
+        {
+          "phase": "cast",
+          "evidence": "INIBIN animation/timing",
+          "confidence": "high"
+        },
+        {
+          "phase": "impact",
+          "evidence": "INIBIN/dependent spell",
+          "confidence": "high"
+        }
+      ],
+      "derived_timing": {
+        "cast_event_seconds": 0.25,
+        "cast_event_basis": "SpellData.OverrideCastTime",
+        "confidence": "high"
+      },
+      "field_evidence": [
+        {
+          "field": "HitEffectName",
+          "value": "DisintegrateHit_tar.troy",
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "AfterEffectName",
+          "value": "Disintegrate_tar.troy",
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "AnimationName",
+          "value": "Spell4",
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "Sound_CastName",
+          "value": "ability_disintegrate_cast.wav",
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileBoneName",
+          "value": "neck",
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileEffect",
+          "value": "Disintegrate_mis.troy",
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "Sound_HitName",
+          "value": "ability_disintegrate_hit.wav",
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "OverrideCastTime",
+          "value": 0.25,
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "DelayCastOffsetPercent",
+          "value": -0.5,
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "DelayTotalTimePercent",
+          "value": -0.5,
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "CastFrame",
+          "value": 7.5,
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "UseAnimatorFramerate",
+          "value": true,
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "MissileSpeed",
+          "value": "1400.0000",
+          "source": "Spells/ViR.inibin",
+          "confidence": "high"
+        },
+        {
+          "field": "HitEffectName",
+          "value": "HeadButt_tar.troy",
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "HitBoneName",
+          "value": "C_BUFFBONE_GLB_CHEST_LOC",
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "AfterEffectName",
+          "value": "Stun_glb.troy",
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "AnimationName",
+          "value": "Spell2",
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "Sound_CastName",
+          "value": "Minotaur_Headbutt.wav",
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "MissileBoneName",
+          "value": "R_hand",
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "MissileEffect",
+          "value": "AnnieBasicAttack_mis.troy",
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "Sound_HitName",
+          "value": "none.wav",
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "DelayTotalTimePercent",
+          "value": -0.550000011920929,
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "DelayCastOffsetPercent",
+          "value": 0.8,
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "CastFrame",
+          "value": 33,
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        },
+        {
+          "field": "UseAnimatorFramerate",
+          "value": true,
+          "source": "Spells/ViRDunk.inibin",
+          "confidence": "medium"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Vi_Spell2",
+          "path": "Skins/Base/Animations/Vi_Spell2.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 89012,
+          "declared_resource_size": 89000,
+          "joint_count": 98,
+          "frame_count": 51,
+          "frame_duration_seconds": 0.0333333,
+          "fps": 30.0,
+          "duration_seconds": 1.7,
+          "confidence": "medium"
+        },
+        {
+          "name": "Vi_Spell2_A",
+          "path": "Skins/Base/Animations/Vi_Spell2_A.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 92096,
+          "declared_resource_size": 92084,
+          "joint_count": 98,
+          "frame_count": 51,
+          "frame_duration_seconds": 0.0333333,
+          "fps": 30.0,
+          "duration_seconds": 1.7,
+          "confidence": "medium"
+        },
+        {
+          "name": "Vi_Spell4",
+          "path": "Skins/Base/Animations/Vi_Spell4.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 32060,
+          "declared_resource_size": 32048,
+          "joint_count": 98,
+          "frame_count": 20,
+          "frame_duration_seconds": 0.0322581,
+          "fps": 31.0,
+          "duration_seconds": 0.6452,
+          "confidence": "high"
+        },
+        {
+          "name": "Vi_Spell4_hit",
+          "path": "Skins/Base/Animations/Vi_Spell4_hit.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 59512,
+          "declared_resource_size": 59500,
+          "joint_count": 98,
+          "frame_count": 29,
+          "frame_duration_seconds": 0.0322581,
+          "fps": 31.0,
+          "duration_seconds": 0.9355,
+          "confidence": "high"
+        },
+        {
+          "name": "Vi_Spell4_run",
+          "path": "Skins/Base/Animations/Vi_Spell4_run.anm",
+          "encoding": "uncompressed",
+          "version": 4,
+          "file_size": 63684,
+          "declared_resource_size": 63672,
+          "joint_count": 98,
+          "frame_count": 31,
+          "frame_duration_seconds": 0.0322581,
+          "fps": 31.0,
+          "duration_seconds": 1.0,
+          "confidence": "high"
+        }
+      ],
+      "preload_dependencies": [
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_r_dash_tar.troy",
+          "target": "vi_r_dash_tar.troy",
+          "resolved": true,
+          "source": "Spells/ViRDunkStun.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_r_knockback_tar.troy",
+          "target": "vi_r_knockback_tar.troy",
+          "resolved": true,
+          "source": "Spells/ViRDunkVFX.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunkstun",
+          "target": "virdunkstun",
+          "resolved": true,
+          "source": "Spells/ViRTracker.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunktargetself",
+          "target": "virdunktargetself",
+          "resolved": true,
+          "source": "Spells/ViRDunk.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_racer_r_pillar.troy",
+          "target": "vi_racer_r_pillar.troy",
+          "resolved": true,
+          "source": "Spells/ViRDunk.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_r_pillar.troy",
+          "target": "vi_r_pillar.troy",
+          "resolved": true,
+          "source": "Spells/ViRDunk.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "suppression",
+          "target": "suppression",
+          "resolved": false,
+          "source": "Spells/ViRDunk.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunktarget",
+          "target": "virdunktarget",
+          "resolved": true,
+          "source": "Spells/ViRDunk.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunkstun",
+          "target": "virdunkstun",
+          "resolved": true,
+          "source": "Spells/ViRDunk.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_r_target_indicator_02.troy",
+          "target": "vi_r_target_indicator_02.troy",
+          "resolved": true,
+          "source": "Spells/ViRTarget.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_r_target_indicator.troy",
+          "target": "vi_r_target_indicator.troy",
+          "resolved": true,
+          "source": "Spells/ViRTarget.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunkghost",
+          "target": "virdunkghost",
+          "resolved": true,
+          "source": "Spells/ViRDunkTargetSelf.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "unstoppableforcemarker",
+          "target": "unstoppableforcemarker",
+          "resolved": false,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virknockback",
+          "target": "virknockback",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunkvfx",
+          "target": "virdunkvfx",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virhit",
+          "target": "virhit",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadCharacter",
+          "name": "testcube",
+          "target": "testcube",
+          "resolved": false,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunkmarker",
+          "target": "virdunkmarker",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunktarget",
+          "target": "virdunktarget",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunkstun",
+          "target": "virdunkstun",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "expirationtimer",
+          "target": "expirationtimer",
+          "resolved": false,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunk",
+          "target": "virdunk",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virvoice",
+          "target": "virvoice",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_r_chargedrun_impact.troy",
+          "target": "vi_r_chargedrun_impact.troy",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "vir",
+          "target": "vir",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virtracker",
+          "target": "virtracker",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virtarget",
+          "target": "virtarget",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "viteamwork",
+          "target": "viteamwork",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadSpell",
+          "name": "virdunkring",
+          "target": "virdunkring",
+          "resolved": true,
+          "source": "Spells/ViR.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_r_dash_tar.troy",
+          "target": "vi_r_dash_tar.troy",
+          "resolved": true,
+          "source": "Spells/ViRDunkTarget.preload"
+        },
+        {
+          "kind": "BBPreloadParticle",
+          "name": "vi_r_laser_target.troy",
+          "target": "vi_r_laser_target.troy",
+          "resolved": true,
+          "source": "Spells/ViRDunkRing.preload"
+        }
+      ],
+      "particles": [
+        {
+          "reference": "anniebasicattack_mis.troy",
+          "resolved_path": null,
+          "confidence": "medium",
+          "skin_scope": "unresolved"
+        },
+        {
+          "reference": "disintegrate_mis.troy",
+          "resolved_path": null,
+          "confidence": "medium",
+          "skin_scope": "unresolved"
+        },
+        {
+          "reference": "disintegrate_tar.troy",
+          "resolved_path": null,
+          "confidence": "medium",
+          "skin_scope": "unresolved"
+        },
+        {
+          "reference": "disintegratehit_tar.troy",
+          "resolved_path": null,
+          "confidence": "medium",
+          "skin_scope": "unresolved"
+        },
+        {
+          "reference": "headbutt_tar.troy",
+          "resolved_path": null,
+          "confidence": "medium",
+          "skin_scope": "unresolved"
+        },
+        {
+          "reference": "stun_glb.troy",
+          "resolved_path": null,
+          "confidence": "medium",
+          "skin_scope": "unresolved"
+        },
+        {
+          "reference": "vi_r_chargedrun_impact.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_R_ChargedRun_impact.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_r_dash_tar.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_R_Dash_tar.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_r_knockback_tar.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_R_Knockback_tar.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_r_laser_target.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_R_Laser_Target.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_r_pillar.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_R_Pillar.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_r_target_indicator.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_R_target_Indicator.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_r_target_indicator_02.troy",
+          "resolved_path": "Skins/Base/Particles/Vi_R_target_Indicator_02.troybin",
+          "confidence": "high",
+          "skin_scope": "selected_skin"
+        },
+        {
+          "reference": "vi_racer_r_pillar.troy",
+          "resolved_path": "Skins/Skin01/Particles/Vi_Racer_R_Pillar.troybin",
+          "confidence": "medium",
+          "skin_scope": "other_skin"
+        }
+      ],
+      "particle_candidates_by_name": [
+        {
+          "name": "Vi_R_Cas_start",
+          "path": "Skins/Base/Particles/Vi_R_Cas_start.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_DunkTarget_tar",
+          "path": "Skins/Base/Particles/Vi_R_DunkTarget_tar.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Fist_R",
+          "path": "Skins/Base/Particles/Vi_R_Fist_R.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Indicator_Child",
+          "path": "Skins/Base/Particles/Vi_R_Indicator_Child.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Jump",
+          "path": "Skins/Base/Particles/Vi_R_Jump.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Jump_Arm_Wpn_Trail",
+          "path": "Skins/Base/Particles/Vi_R_Jump_Arm_Wpn_Trail.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Land",
+          "path": "Skins/Base/Particles/Vi_R_Land.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Run",
+          "path": "Skins/Base/Particles/Vi_R_Run.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Run_Sound",
+          "path": "Skins/Base/Particles/Vi_R_Run_Sound.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Skin_Swap",
+          "path": "Skins/Base/Particles/Vi_R_Skin_Swap.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Skin_Swap_Jump",
+          "path": "Skins/Base/Particles/Vi_R_Skin_Swap_Jump.troybin",
+          "confidence": "low"
+        },
+        {
+          "name": "Vi_R_Voice_Special",
+          "path": "Skins/Base/Particles/Vi_R_Voice_Special.troybin",
+          "confidence": "low"
+        }
+      ],
+      "bone_validation": [
+        {
+          "name": "C_BUFFBONE_GLB_CHEST_LOC",
+          "present_in_skeleton": true
+        },
+        {
+          "name": "neck",
+          "present_in_skeleton": true
+        },
+        {
+          "name": "R_hand",
+          "present_in_skeleton": true
+        }
+      ],
+      "lua_constants": [
+        {
+          "path": "Spells/ViR.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "DoesntBreakShields",
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "NotSingleTargetSpell",
+            "SpellDamageRatio",
+            "SpellFXOverrideSkins",
+            "ViR",
+            "ViR.dds",
+            "ViSkin02"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRDunk.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "Charging",
+            "DoesntBreakShields",
+            "DoesntTriggerSpellCasts",
+            "Minotaur_Headbutt.dds",
+            "NotSingleTargetSpell",
+            "SpellDamageRatio"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRDunkGhost.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRDunkMarker.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRDunkRing.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRDunkStun.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "PersistsThroughDeath",
+            "SpellFXOverrideSkins",
+            "ViR",
+            "ViR.dds",
+            "ViRacer"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRDunkTarget.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "PersistsThroughDeath",
+            "SpellFXOverrideSkins",
+            "ViR.dds",
+            "ViRacer",
+            "ViRTarget"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRDunkTargetSelf.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "PersistsThroughDeath",
+            "ViR",
+            "ViR.dds"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRDunkVFX.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRHit.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "IsDeathRecapSource",
+            "NotSingleTargetSpell",
+            "SpellDamageRatio"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRKnockback.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "DoesntTriggerSpellCasts",
+            "Draven_SoulReaper",
+            "IsDamagingSpell",
+            "NotSingleTargetSpell",
+            "SpellVOOverrideSkins",
+            "ViR.dds",
+            "ViRDunkTarget"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRKnockdown.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRKnockup.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRMissile.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "CastingBreaksStealth",
+            "DoesntBreakShields",
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "NotSingleTargetSpell",
+            "SpellFXOverrideSkins",
+            "Zyra_hellvine"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRTarget.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "BuffName",
+            "BuffTextureName",
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "NautilusAstronaut",
+            "NonDispellable",
+            "NotSingleTargetSpell",
+            "PersistsThroughDeath",
+            "SpellDamageRatio",
+            "SpellFXOverrideSkins",
+            "ViR.dds",
+            "ViRTarget"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRTracker.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "DoesntTriggerSpellCasts",
+            "IsDamagingSpell",
+            "NotSingleTargetSpell",
+            "PersistsThroughDeath",
+            "SpellDamageRatio"
+          ],
+          "numbers": [
+            1.0
+          ],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRunCycleManager.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [
+            "PersistsThroughDeath"
+          ],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViRVoice.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        },
+        {
+          "path": "Spells/ViTeamwork.luaobj",
+          "version": "5.1",
+          "prototype_count": 1,
+          "strings": [],
+          "numbers": [],
+          "confidence": "medium"
+        }
+      ],
+      "limitations": [
+        "Lua bytecode constants are evidence, not a decompiled execution order.",
+        "Filename-based ANM-to-slot mapping must be reviewed when a champion uses non-standard clip names."
+      ]
+    }
+  },
+  "asset_index": {
+    "animations": {
+      "Skins/Base/Animations/Vi_Attack1.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 86424,
+        "declared_resource_size": 86412,
+        "joint_count": 98,
+        "frame_count": 50,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.6667
+      },
+      "Skins/Base/Animations/Vi_Attack2.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 80136,
+        "declared_resource_size": 80124,
+        "joint_count": 98,
+        "frame_count": 35,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.1667
+      },
+      "Skins/Base/Animations/Vi_Attack3.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 85632,
+        "declared_resource_size": 85620,
+        "joint_count": 98,
+        "frame_count": 50,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.6667
+      },
+      "Skins/Base/Animations/Vi_Attack5.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 69124,
+        "declared_resource_size": 69112,
+        "joint_count": 98,
+        "frame_count": 50,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.6667
+      },
+      "Skins/Base/Animations/Vi_Attack6.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 80160,
+        "declared_resource_size": 80148,
+        "joint_count": 98,
+        "frame_count": 35,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.1667
+      },
+      "Skins/Base/Animations/Vi_Attack_afterUlt.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 80836,
+        "declared_resource_size": 80824,
+        "joint_count": 98,
+        "frame_count": 35,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.1667
+      },
+      "Skins/Base/Animations/Vi_Channel.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 105120,
+        "declared_resource_size": 105108,
+        "joint_count": 86,
+        "frame_count": 60,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 2.0
+      },
+      "Skins/Base/Animations/Vi_Channel_windup.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 46976,
+        "declared_resource_size": 46964,
+        "joint_count": 86,
+        "frame_count": 30,
+        "frame_duration_seconds": 0.0322581,
+        "fps": 31.0,
+        "duration_seconds": 0.9677
+      },
+      "Skins/Base/Animations/Vi_Crit.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 98060,
+        "declared_resource_size": 98048,
+        "joint_count": 98,
+        "frame_count": 50,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.6667
+      },
+      "Skins/Base/Animations/Vi_Dance.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 538008,
+        "declared_resource_size": 537996,
+        "joint_count": 98,
+        "frame_count": 233,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 7.7667
+      },
+      "Skins/Base/Animations/Vi_Dance_IN.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 85704,
+        "declared_resource_size": 85692,
+        "joint_count": 86,
+        "frame_count": 41,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.3667
+      },
+      "Skins/Base/Animations/Vi_Death.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 188552,
+        "declared_resource_size": 188540,
+        "joint_count": 98,
+        "frame_count": 96,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 3.2
+      },
+      "Skins/Base/Animations/Vi_Idle1.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 70032,
+        "declared_resource_size": 70020,
+        "joint_count": 98,
+        "frame_count": 41,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.3667
+      },
+      "Skins/Base/Animations/Vi_Idle1_IN_B.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 213516,
+        "declared_resource_size": 213504,
+        "joint_count": 86,
+        "frame_count": 136,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 4.5333
+      },
+      "Skins/Base/Animations/Vi_Idle1_IN_C.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 262920,
+        "declared_resource_size": 262908,
+        "joint_count": 86,
+        "frame_count": 131,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 4.3667
+      },
+      "Skins/Base/Animations/Vi_Idle2.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 295920,
+        "declared_resource_size": 295908,
+        "joint_count": 98,
+        "frame_count": 135,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 4.5
+      },
+      "Skins/Base/Animations/Vi_Idle_in.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 156092,
+        "declared_resource_size": 156080,
+        "joint_count": 86,
+        "frame_count": 91,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 3.0333
+      },
+      "Skins/Base/Animations/Vi_Joke.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 875788,
+        "declared_resource_size": 875776,
+        "joint_count": 98,
+        "frame_count": 359,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 11.9667
+      },
+      "Skins/Base/Animations/Vi_Joke2.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 332516,
+        "declared_resource_size": 332504,
+        "joint_count": 98,
+        "frame_count": 194,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 6.4667
+      },
+      "Skins/Base/Animations/Vi_Laugh.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 271156,
+        "declared_resource_size": 271144,
+        "joint_count": 98,
+        "frame_count": 114,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 3.8
+      },
+      "Skins/Base/Animations/Vi_Recall.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 579956,
+        "declared_resource_size": 579944,
+        "joint_count": 98,
+        "frame_count": 291,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 9.7
+      },
+      "Skins/Base/Animations/Vi_Run1.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 44444,
+        "declared_resource_size": 44432,
+        "joint_count": 86,
+        "frame_count": 27,
+        "frame_duration_seconds": 0.0322581,
+        "fps": 31.0,
+        "duration_seconds": 0.871
+      },
+      "Skins/Base/Animations/Vi_Run1_IN.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 44496,
+        "declared_resource_size": 44484,
+        "joint_count": 86,
+        "frame_count": 27,
+        "frame_duration_seconds": 0.0322581,
+        "fps": 31.0,
+        "duration_seconds": 0.871
+      },
+      "Skins/Base/Animations/Vi_Run2.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 65892,
+        "declared_resource_size": 65880,
+        "joint_count": 98,
+        "frame_count": 37,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.2333
+      },
+      "Skins/Base/Animations/Vi_Run2_IN.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 60216,
+        "declared_resource_size": 60204,
+        "joint_count": 86,
+        "frame_count": 37,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.2333
+      },
+      "Skins/Base/Animations/Vi_Spell1.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 74180,
+        "declared_resource_size": 74168,
+        "joint_count": 98,
+        "frame_count": 50,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.6667
+      },
+      "Skins/Base/Animations/Vi_Spell1_Idle.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 45624,
+        "declared_resource_size": 45612,
+        "joint_count": 98,
+        "frame_count": 28,
+        "frame_duration_seconds": 0.0322581,
+        "fps": 31.0,
+        "duration_seconds": 0.9032
+      },
+      "Skins/Base/Animations/Vi_SPELL1_IdleIntro.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 142728,
+        "declared_resource_size": 142716,
+        "joint_count": 98,
+        "frame_count": 60,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 2.0
+      },
+      "Skins/Base/Animations/Vi_Spell1_Run.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 62156,
+        "declared_resource_size": 62144,
+        "joint_count": 98,
+        "frame_count": 37,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.2333
+      },
+      "Skins/Base/Animations/Vi_Spell2.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 89012,
+        "declared_resource_size": 89000,
+        "joint_count": 98,
+        "frame_count": 51,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.7
+      },
+      "Skins/Base/Animations/Vi_Spell2_A.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 92096,
+        "declared_resource_size": 92084,
+        "joint_count": 98,
+        "frame_count": 51,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.7
+      },
+      "Skins/Base/Animations/Vi_Spell3.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 90440,
+        "declared_resource_size": 90428,
+        "joint_count": 98,
+        "frame_count": 51,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 1.7
+      },
+      "Skins/Base/Animations/Vi_Spell4.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 32060,
+        "declared_resource_size": 32048,
+        "joint_count": 98,
+        "frame_count": 20,
+        "frame_duration_seconds": 0.0322581,
+        "fps": 31.0,
+        "duration_seconds": 0.6452
+      },
+      "Skins/Base/Animations/Vi_Spell4_hit.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 59512,
+        "declared_resource_size": 59500,
+        "joint_count": 98,
+        "frame_count": 29,
+        "frame_duration_seconds": 0.0322581,
+        "fps": 31.0,
+        "duration_seconds": 0.9355
+      },
+      "Skins/Base/Animations/Vi_Spell4_run.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 63684,
+        "declared_resource_size": 63672,
+        "joint_count": 98,
+        "frame_count": 31,
+        "frame_duration_seconds": 0.0322581,
+        "fps": 31.0,
+        "duration_seconds": 1.0
+      },
+      "Skins/Base/Animations/vi_stunned.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 125836,
+        "declared_resource_size": 125824,
+        "joint_count": 86,
+        "frame_count": 60,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 2.0
+      },
+      "Skins/Base/Animations/Vi_Taunt.anm": {
+        "encoding": "uncompressed",
+        "version": 4,
+        "file_size": 470248,
+        "declared_resource_size": 470236,
+        "joint_count": 98,
+        "frame_count": 223,
+        "frame_duration_seconds": 0.0333333,
+        "fps": 30.0,
+        "duration_seconds": 7.4333
+      }
+    },
+    "skeletons": {
+      "Skins/Base/Vi.skl": {
+        "candidate_bones": [
+          "Bain1",
+          "Bain2",
+          "Buffbone_Backpack",
+          "Buffbone_Cstm_Ground",
+          "Buffbone_Glb_Channel_Loc",
+          "Buffbone_Glb_Ground_Loc",
+          "Buffbone_Glb_Weapon_1",
+          "C_Buffbone_Glb_Center_Loc",
+          "C_Buffbone_Glb_Chest_Loc",
+          "C_Buffbone_Glb_Head_Loc",
+          "C_Buffbone_Glb_Layout_Loc",
+          "C_Buffbone_Glb_Overhead_Loc",
+          "Hair1",
+          "Hair2",
+          "Head",
+          "l2hB",
+          "L_Buffbone_Glb_Foot_Loc",
+          "L_Buffbone_Glb_Hand_Loc",
+          "L_Clavicle",
+          "L_Elbow",
+          "L_Foot",
+          "L_GloveForarm",
+          "L_GloveHand",
+          "L_Hand",
+          "L_Hip",
+          "L_Index1",
+          "L_Index2",
+          "L_JacketFlap",
+          "L_KneeLower",
+          "L_KneeUpper",
+          "L_Middle1",
+          "L_Middle2",
+          "L_Pinky1",
+          "L_Pinky2",
+          "L_Ring1",
+          "L_Ring2",
+          "L_Shoulder",
+          "L_ShoulderPad",
+          "L_Thumb1",
+          "L_Thumb2",
+          "L_Toe",
+          "Neck",
+          "R_Buffbone_Glb_Foot_Loc",
+          "R_Buffbone_Glb_Hand_Loc",
+          "R_Clavicle",
+          "R_Elbow",
+          "R_Foot",
+          "R_GloveForarm",
+          "R_GloveHand",
+          "R_Hand",
+          "R_Hip",
+          "R_Index1",
+          "R_Index2",
+          "R_JacketFlap",
+          "R_KneeLower",
+          "R_KneeUpper",
+          "R_Middle1",
+          "R_Middle2",
+          "R_Pinky1",
+          "R_Pinky2",
+          "R_Ring1",
+          "R_Ring2",
+          "R_Shoulder",
+          "R_ShoulderPad",
+          "R_Thumb1",
+          "R_Thumb2",
+          "R_Toe",
+          "Root",
+          "S6K",
+          "Spine1",
+          "Spine2",
+          "Spine3",
+          "Teacup",
+          "Ukr",
+          "Ukx"
+        ],
+        "candidate_bone_count": 75
+      }
+    },
+    "particles": {
+      "Skins/Base/Particles/Vi_Arm_L.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "arm",
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "Complex",
+          "distort-heat.tga",
+          "FioraShield.sco",
+          "High",
+          "Jayce_Hammer_Burst.TGA",
+          "TvT",
+          "VI_BasicAttack_Cylinder.sco",
+          "Vi_BasicAttack_SpeedLines.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "distort-heat.tga",
+          "FioraShield.sco",
+          "Jayce_Hammer_Burst.TGA",
+          "VI_BasicAttack_Cylinder.sco",
+          "Vi_BasicAttack_SpeedLines.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Arm_R.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "arm",
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "Complex",
+          "distort-heat.tga",
+          "FioraShield.sco",
+          "High",
+          "Jayce_Hammer_Burst.TGA",
+          "TvT",
+          "VI_BasicAttack_Cylinder.sco",
+          "Vi_BasicAttack_SpeedLines.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "distort-heat.tga",
+          "FioraShield.sco",
+          "Jayce_Hammer_Burst.TGA",
+          "VI_BasicAttack_Cylinder.sco",
+          "Vi_BasicAttack_SpeedLines.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred.troybin": {
+        "strings": [
+          "armordebuff.tga",
+          "color-armordebuff.tga",
+          "color-hold.tga",
+          "debuff_shield1",
+          "debuff_shield2",
+          "debuff_shield3",
+          "High",
+          "Play_sfx_Vi_ViWBuff_hit_champ",
+          "shield",
+          "Vi_ArmorShred_Child.troy",
+          "Vi_ArmorShred_Shards.dds",
+          "Vi_ArmorShred_Shield_3.sco"
+        ],
+        "dependencies": [
+          "armordebuff.tga",
+          "color-armordebuff.tga",
+          "color-hold.tga",
+          "Vi_ArmorShred_Child.troy",
+          "Vi_ArmorShred_Shards.dds",
+          "Vi_ArmorShred_Shield_3.sco"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred_Child.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-smoke32_07.tga",
+          "Complex",
+          "drag",
+          "FireHit.tga",
+          "flare",
+          "flare-Rainbow_purp_01.tga",
+          "glow",
+          "glow2",
+          "High",
+          "noise",
+          "Projected",
+          "shrads",
+          "Simple",
+          "slash1",
+          "slash2",
+          "sparks",
+          "sparks-orange.tga",
+          "sparks2",
+          "Vi_ArmorShred_Shards.dds",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds",
+          "Vi_Shield_Shard.sco",
+          "Vi_Slash_01.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-smoke32_07.tga",
+          "FireHit.tga",
+          "flare-Rainbow_purp_01.tga",
+          "sparks-orange.tga",
+          "Vi_ArmorShred_Shards.dds",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds",
+          "Vi_Shield_Shard.sco",
+          "Vi_Slash_01.dds"
+        ]
+      },
+      "Skins/Base/Particles/VI_ArmorShred_Dragon.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "flash",
+          "High",
+          "Play_sfx_Vi_ViWBuff_hit_champ",
+          "Vi_ArmorShred_Child.troy",
+          "Vi_Lensflare_Streak.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Vi_ArmorShred_Child.troy",
+          "Vi_Lensflare_Streak.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred_Flash.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "drag",
+          "FireHit.tga",
+          "flare",
+          "glow",
+          "High",
+          "noise",
+          "Projected",
+          "Simple",
+          "sparks",
+          "sparks-orange.tga",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "FireHit.tga",
+          "sparks-orange.tga",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred_Hit_1.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-hold.tga",
+          "color-madflame32.tga",
+          "FlameAccel",
+          "FlameDrag",
+          "FlameNoise",
+          "flare",
+          "glow",
+          "hecarimflame.tga",
+          "High",
+          "ring",
+          "Simple",
+          "swirl",
+          "Vi_ArmorShred_Flash.troy",
+          "Vi_ArmorShred_Shield.sco",
+          "Vi_E_ArmorShred_Ring.tga",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds",
+          "Vi_Shield_Txt_1.dds",
+          "Vi_Slash_Shockwave_Half.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hold.tga",
+          "color-madflame32.tga",
+          "hecarimflame.tga",
+          "Vi_ArmorShred_Flash.troy",
+          "Vi_ArmorShred_Shield.sco",
+          "Vi_E_ArmorShred_Ring.tga",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds",
+          "Vi_Shield_Txt_1.dds",
+          "Vi_Slash_Shockwave_Half.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred_Hit_2.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-hold.tga",
+          "ring",
+          "ring2",
+          "Simple",
+          "swirl",
+          "Vi_E_ArmorShred_Ring.tga",
+          "Vi_E_ArmorShred_Ring2.tga",
+          "Vi_Slash_Shockwave_Half.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hold.tga",
+          "Vi_E_ArmorShred_Ring.tga",
+          "Vi_E_ArmorShred_Ring2.tga",
+          "Vi_Slash_Shockwave_Half.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred_Hit_Minion_1.troybin": {
+        "strings": [
+          "color-hold.tga",
+          "ring",
+          "Simple",
+          "Vi_E_ArmorShred_Ring.dds",
+          "Vi_Shield_Txt_Minion_1.dds"
+        ],
+        "dependencies": [
+          "color-hold.tga",
+          "Vi_E_ArmorShred_Ring.dds",
+          "Vi_Shield_Txt_Minion_1.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred_Hit_Minion_2.troybin": {
+        "strings": [
+          "color-hold.tga",
+          "ring",
+          "ring2",
+          "Simple",
+          "Vi_E_ArmorShred_Ring.tga",
+          "Vi_E_ArmorShred_Ring2.tga",
+          "Vi_Shield_Txt_Minion_2.tga"
+        ],
+        "dependencies": [
+          "color-hold.tga",
+          "Vi_E_ArmorShred_Ring.tga",
+          "Vi_E_ArmorShred_Ring2.tga",
+          "Vi_Shield_Txt_Minion_2.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred_hold.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-hold.tga",
+          "glow",
+          "High",
+          "red-light.tga",
+          "ring",
+          "Simple",
+          "Vi_Soft_Glow_Ring.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hold.tga",
+          "red-light.tga",
+          "Vi_Soft_Glow_Ring.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_ArmorShred_Minion.troybin": {
+        "strings": [
+          "color-hold.tga",
+          "High",
+          "Play_sfx_Vi_ViWBuff_hit_minion",
+          "shield",
+          "Vi_ArmorShred_Child.troy",
+          "Vi_ArmorShred_Shards.tga",
+          "Vi_ArmorShred_Shield_3.sco"
+        ],
+        "dependencies": [
+          "color-hold.tga",
+          "Vi_ArmorShred_Child.troy",
+          "Vi_ArmorShred_Shards.tga",
+          "Vi_ArmorShred_Shield_3.sco"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Attack_Speed_Buff.troybin": {
+        "strings": [
+          "color-rampdown.tga",
+          "color-steam.tga",
+          "Drag",
+          "Flashing",
+          "flashing_Skin02",
+          "lofog01.tga",
+          "Noise",
+          "Simple",
+          "solar_tag.tga",
+          "Sparks",
+          "SparksAccel",
+          "steam",
+          "SteamAccel",
+          "Vi_E_AttackSpeed_Glow.dds",
+          "Vi_E_AttackSpeedBuff_Colormap.dds",
+          "Vi_skin02_E_AttackSpeed_Glow.tga",
+          "Vi_skin02_E_AttackSpeedBuff_Colormap.tga",
+          "ViSkin02"
+        ],
+        "dependencies": [
+          "color-rampdown.tga",
+          "color-steam.tga",
+          "lofog01.tga",
+          "solar_tag.tga",
+          "Vi_E_AttackSpeed_Glow.dds",
+          "Vi_E_AttackSpeedBuff_Colormap.dds",
+          "Vi_skin02_E_AttackSpeed_Glow.tga",
+          "Vi_skin02_E_AttackSpeedBuff_Colormap.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_base_emote_death_sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_Vi_Death3D_cast",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_base_emote_joke_sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_Vi_Joke3D_buffactivate",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_base_emote_taunt2_sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_Vi_Taunt3D2_buffactivate",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_base_emote_taunt2_vo.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_vo_Vi_taunt3D2_special",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_base_emote_taunt_sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_Vi_Taunt3D_buffactivate",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_base_emote_taunt_vo.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_vo_Vi_taunt3D_special",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_BasicAttack_1_R.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "color-rampdown.tga",
+          "distort",
+          "distort-heat.tga",
+          "Simple",
+          "Vi_BasicAttack_1.sco",
+          "Vi_BasicAttack_SpeedLines.tga",
+          "Vi_BasicAttack_SpeedLines_Black.tga",
+          "Vi_Racer_BasicAttack_SpeedLines.dds",
+          "ViRacer",
+          "WeaponTrail",
+          "WeaponTrail_Black",
+          "weapontrail_racer"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "color-rampdown.tga",
+          "distort-heat.tga",
+          "Vi_BasicAttack_1.sco",
+          "Vi_BasicAttack_SpeedLines.tga",
+          "Vi_BasicAttack_SpeedLines_Black.tga",
+          "Vi_Racer_BasicAttack_SpeedLines.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_BasicAttack_2_L.troybin": {
+        "strings": [
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "color-rampdown.tga",
+          "distort",
+          "distort-heat.tga",
+          "Vi_BasicAttack2.sco",
+          "Vi_BasicAttack_2.dds",
+          "Vi_Racer_BasicAttack_2.dds",
+          "ViRacer",
+          "WeaponTrail",
+          "WeaponTrail_Racer"
+        ],
+        "dependencies": [
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "color-rampdown.tga",
+          "distort-heat.tga",
+          "Vi_BasicAttack2.sco",
+          "Vi_BasicAttack_2.dds",
+          "Vi_Racer_BasicAttack_2.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_BasicAttack_2_Trail.troybin": {
+        "strings": [
+          "color-rampdown.tga",
+          "Evelynn_WeaponTrail2.tga",
+          "Hecarim_WeaponTrail_1.sco",
+          "WeaponTrail"
+        ],
+        "dependencies": [
+          "color-rampdown.tga",
+          "Evelynn_WeaponTrail2.tga",
+          "Hecarim_WeaponTrail_1.sco"
+        ]
+      },
+      "Skins/Base/Particles/Vi_BasicAttack_3_R.troybin": {
+        "strings": [
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "color-rampdown.tga",
+          "distort",
+          "distort-heat.tga",
+          "Vi_BasicAttack3.sco",
+          "Vi_BasicAttack_2.tga",
+          "Vi_Racer_BasicAttack_2.dds",
+          "ViRacer",
+          "WeaponTrail",
+          "WeaponTrail_Black",
+          "WeaponTrail_Racer"
+        ],
+        "dependencies": [
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "color-rampdown.tga",
+          "distort-heat.tga",
+          "Vi_BasicAttack3.sco",
+          "Vi_BasicAttack_2.tga",
+          "Vi_Racer_BasicAttack_2.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Crit.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "Hit_Flash",
+          "Jayce_Color_Fade2.tga",
+          "SowFlash.tga",
+          "speed_forward",
+          "speed_forward_black",
+          "Vi_Impact_05",
+          "Vi_Impact_05.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "Jayce_Color_Fade2.tga",
+          "SowFlash.tga",
+          "Vi_Impact_05.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Death_smoke.troybin": {
+        "strings": [
+          "acidsmoketrail32.tga",
+          "color-randomsmokelife32.tga",
+          "smoketrail"
+        ],
+        "dependencies": [
+          "acidsmoketrail32.tga",
+          "color-randomsmokelife32.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_E_activate_hands.troybin": {
+        "strings": [
+          "color-steam.tga",
+          "Drag",
+          "glow",
+          "Glows.tga",
+          "lofog01.tga",
+          "Noise",
+          "Simple",
+          "steam_left",
+          "SteamAccel",
+          "Vi_W_HandGlow_ColorMap.tga"
+        ],
+        "dependencies": [
+          "color-steam.tga",
+          "Glows.tga",
+          "lofog01.tga",
+          "Vi_W_HandGlow_ColorMap.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_E_activate_hands_L.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "arm",
+          "BurningFuse.tga",
+          "color-base32.tga",
+          "color-rampdown.tga",
+          "color-steam.tga",
+          "Drag",
+          "gemglow.tga",
+          "glow",
+          "glow_skin02",
+          "Glows.tga",
+          "glowy",
+          "High",
+          "lofog01.tga",
+          "Noise",
+          "powerup_glow",
+          "powerup_glow_racer",
+          "Simple",
+          "Skin02_energy",
+          "sparks",
+          "steam",
+          "SteamAccel",
+          "Vi_Arm_Cylnder.sco",
+          "Vi_E_Activation_Hand_ColorMap.dds",
+          "Vi_E_Activation_Hand_Glow.dds",
+          "Vi_Racer_E_Activation_Hand_Glow.dds",
+          "Vi_skin02_E_AttackSpeedBuff_Colormap_02.tga",
+          "Vi_Skin02_E_energy_01.tga",
+          "Vi_W_HandGlow_ColorMap.dds",
+          "ViRacer",
+          "ViSkin02",
+          "Void_FG_Lightning.tga"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "BurningFuse.tga",
+          "color-base32.tga",
+          "color-rampdown.tga",
+          "color-steam.tga",
+          "gemglow.tga",
+          "Glows.tga",
+          "lofog01.tga",
+          "Vi_Arm_Cylnder.sco",
+          "Vi_E_Activation_Hand_ColorMap.dds",
+          "Vi_E_Activation_Hand_Glow.dds",
+          "Vi_Racer_E_Activation_Hand_Glow.dds",
+          "Vi_skin02_E_AttackSpeedBuff_Colormap_02.tga",
+          "Vi_Skin02_E_energy_01.tga",
+          "Vi_W_HandGlow_ColorMap.dds",
+          "Void_FG_Lightning.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_E_activate_hands_R.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "arm",
+          "BurningFuse.tga",
+          "color-base32.tga",
+          "color-rampdown.tga",
+          "color-steam.tga",
+          "Drag",
+          "gemglow.tga",
+          "glow",
+          "glow_skin02",
+          "Glows.tga",
+          "glowy",
+          "High",
+          "lofog01.tga",
+          "Noise",
+          "powerup_glow",
+          "powerup_glow_racer",
+          "Simple",
+          "Skin02_energy",
+          "sparks",
+          "steam",
+          "SteamAccel",
+          "Vi_Arm_Cylnder.sco",
+          "Vi_E_Activation_Hand_ColorMap.dds",
+          "Vi_E_Activation_Hand_Glow.dds",
+          "Vi_Racer_E_Activation_Hand_Glow.dds",
+          "Vi_skin02_E_AttackSpeedBuff_Colormap_02.tga",
+          "Vi_Skin02_E_energy_01.tga",
+          "Vi_W_HandGlow_ColorMap.dds",
+          "ViRacer",
+          "ViSkin02",
+          "Void_FG_Lightning.tga"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "BurningFuse.tga",
+          "color-base32.tga",
+          "color-rampdown.tga",
+          "color-steam.tga",
+          "gemglow.tga",
+          "Glows.tga",
+          "lofog01.tga",
+          "Vi_Arm_Cylnder.sco",
+          "Vi_E_Activation_Hand_ColorMap.dds",
+          "Vi_E_Activation_Hand_Glow.dds",
+          "Vi_Racer_E_Activation_Hand_Glow.dds",
+          "Vi_skin02_E_AttackSpeedBuff_Colormap_02.tga",
+          "Vi_Skin02_E_energy_01.tga",
+          "Vi_W_HandGlow_ColorMap.dds",
+          "Void_FG_Lightning.tga"
+        ]
+      },
+      "Skins/Base/Particles/VI_E_AttackSpeed_Knuckles.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "base",
+          "color-hold.tga",
+          "missing_instant.dds",
+          "racer",
+          "Simple",
+          "Skin03",
+          "trans-vladnbladeback.tga",
+          "Vi_Knuckles_Hot.dds",
+          "Vi_Racer_Knuckles_Glow.dds",
+          "Vi_Skin02_skin_swap_02.tga",
+          "ViRacer",
+          "ViSkin02"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hold.tga",
+          "missing_instant.dds",
+          "trans-vladnbladeback.tga",
+          "Vi_Knuckles_Hot.dds",
+          "Vi_Racer_Knuckles_Glow.dds",
+          "Vi_Skin02_skin_swap_02.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_E_Cas.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "speed",
+          "speed_racer",
+          "Vi_Q_mis_Child.troy",
+          "Vi_Racer_Anime_Impact.dds",
+          "Vi_Shockwave_02.dds",
+          "VIRacer"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "Vi_Q_mis_Child.troy",
+          "Vi_Racer_Anime_Impact.dds",
+          "Vi_Shockwave_02.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_E_Minion_tar.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-incinerate.tga",
+          "ddd",
+          "firehit",
+          "FireHit.tga",
+          "hit_flash",
+          "hulk_shockwave",
+          "Jayce_Color_Fade2.tga",
+          "Simple",
+          "SowFlash.tga",
+          "Vi_Energy_Burst_01.tga",
+          "Vi_Shockwave_01.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-incinerate.tga",
+          "FireHit.tga",
+          "Jayce_Color_Fade2.tga",
+          "SowFlash.tga",
+          "Vi_Energy_Burst_01.tga",
+          "Vi_Shockwave_01.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_E_Shockwave_Child.troybin": {
+        "strings": [
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "distort-heat.tga",
+          "distortionHit",
+          "dust",
+          "K79",
+          "lines",
+          "Play_sfx_Vi_ViEFx_missilelaunch",
+          "Shockwaves",
+          "Simple",
+          "smoke_clouds_2x2_dense.tga",
+          "SmokeDrag",
+          "Vi_E_Shockwave_Dust_ColorMap.tga",
+          "Vi_Shockwave_Colormap.tga",
+          "Vi_Shockwave_Lines_01.dds",
+          "Vi_W_Shockwaves_2.dds"
+        ],
+        "dependencies": [
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "distort-heat.tga",
+          "smoke_clouds_2x2_dense.tga",
+          "Vi_E_Shockwave_Dust_ColorMap.tga",
+          "Vi_Shockwave_Colormap.tga",
+          "Vi_Shockwave_Lines_01.dds",
+          "Vi_W_Shockwaves_2.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_E_Shockwave_tar.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "ball01.tga",
+          "burst",
+          "color-hotsparks.tga",
+          "drag",
+          "graves_mafia_muzzle_cone.sco",
+          "graves_mafia_muzzle_flash.dds",
+          "High",
+          "hit_mesh",
+          "hit_mesh_racer",
+          "Light_Rays_01.tga",
+          "Low",
+          "Medium",
+          "muzzle",
+          "Rays",
+          "Rays_Racer",
+          "shockwave3",
+          "Shockwaves",
+          "Shockwaves2",
+          "Shockwaves2_Racer",
+          "Shockwaves_Black",
+          "Shockwaves_Racer",
+          "Simple",
+          "sparks-orange.tga",
+          "sparkys",
+          "Vi_E_Shockwave_Child.troy",
+          "VI_Q_Dash_Hot_Center.dds",
+          "Vi_Racer_Anime_Impact.dds",
+          "Vi_Racer_Anime_Impact_Cone.sco",
+          "Vi_Racer_E_Shockwave_Child.troy",
+          "Vi_Racer_Shockwave_Colormap.dds",
+          "Vi_Racer_W_Rays_ColorMap.dds",
+          "Vi_Racer_W_Shockwaves.dds",
+          "Vi_Racer_W_Shockwaves_3.dds",
+          "Vi_Shockwave_Colormap.dds",
+          "Vi_Shockwave_Colormap.tga",
+          "Vi_W_Rays_ColorMap.tga",
+          "Vi_W_Shockwaves.dds",
+          "Vi_W_Shockwaves_2.dds",
+          "VIRacer"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "ball01.tga",
+          "color-hotsparks.tga",
+          "graves_mafia_muzzle_cone.sco",
+          "graves_mafia_muzzle_flash.dds",
+          "Light_Rays_01.tga",
+          "sparks-orange.tga",
+          "Vi_E_Shockwave_Child.troy",
+          "VI_Q_Dash_Hot_Center.dds",
+          "Vi_Racer_Anime_Impact.dds",
+          "Vi_Racer_Anime_Impact_Cone.sco",
+          "Vi_Racer_E_Shockwave_Child.troy",
+          "Vi_Racer_Shockwave_Colormap.dds",
+          "Vi_Racer_W_Rays_ColorMap.dds",
+          "Vi_Racer_W_Shockwaves.dds",
+          "Vi_Racer_W_Shockwaves_3.dds",
+          "Vi_Shockwave_Colormap.dds",
+          "Vi_Shockwave_Colormap.tga",
+          "Vi_W_Rays_ColorMap.tga",
+          "Vi_W_Shockwaves.dds",
+          "Vi_W_Shockwaves_2.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_E_tar.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-aura-red.tga",
+          "color-incinerate.tga",
+          "ddd0",
+          "firehit",
+          "FireHit.tga",
+          "hit_flash",
+          "mega_shockwave",
+          "mega_shockwave_black",
+          "Simple",
+          "SowFlash.tga",
+          "Vi_Shockwave_01.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-aura-red.tga",
+          "color-incinerate.tga",
+          "FireHit.tga",
+          "SowFlash.tga",
+          "Vi_Shockwave_01.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Joke_Hot_Swap.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "bloodking_text",
+          "Low",
+          "Simple",
+          "Vi_Joke_Hot_Fade.dds",
+          "Vi_txt_hot.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Vi_Joke_Hot_Fade.dds",
+          "Vi_txt_hot.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Joke_Start.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-steam.tga",
+          "Drag",
+          "drag",
+          "FireHit.tga",
+          "lofog01.tga",
+          "Noise",
+          "noise",
+          "Simple",
+          "sparks-orange.tga",
+          "steam",
+          "SteamAccel",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-steam.tga",
+          "FireHit.tga",
+          "lofog01.tga",
+          "sparks-orange.tga",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Joke_Teacup_Smash.troybin": {
+        "strings": [
+          "color-hold.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-rampdown32.tga",
+          "Complex",
+          "Drag",
+          "drag",
+          "FFF",
+          "FireHit.tga",
+          "Gravity",
+          "High",
+          "noise",
+          "Projected",
+          "shrads",
+          "shrads_ground",
+          "Simple",
+          "sparks",
+          "sparks-orange.tga",
+          "spittle",
+          "Stain",
+          "toxic_splats32.tga",
+          "Vi_Shield_Shard.sco",
+          "Vi_Teacup_Txt.dds",
+          "ViSkin02",
+          "yellowslimedrops32.tga"
+        ],
+        "dependencies": [
+          "color-hold.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-rampdown32.tga",
+          "FireHit.tga",
+          "sparks-orange.tga",
+          "toxic_splats32.tga",
+          "Vi_Shield_Shard.sco",
+          "Vi_Teacup_Txt.dds",
+          "yellowslimedrops32.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Joke_TeacupAppear.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-steam.tga",
+          "Drag",
+          "drag",
+          "FireHit.tga",
+          "flare",
+          "glow",
+          "High",
+          "lofog01.tga",
+          "noise",
+          "Noise",
+          "Projected",
+          "Simple",
+          "sparks",
+          "sparks-orange.tga",
+          "steam",
+          "SteamAccel",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-steam.tga",
+          "FireHit.tga",
+          "lofog01.tga",
+          "sparks-orange.tga",
+          "Vi_Lensflare_Streak.dds",
+          "Vi_Light_Red_Ring.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Passive_BackPack.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "alphaslice.tga",
+          "color-beacontrail32.tga",
+          "flash_on",
+          "flash_on_racer",
+          "glow",
+          "glow_racer",
+          "High",
+          "orbglow_03.tga",
+          "Simple",
+          "slice",
+          "small_glow",
+          "small_glow_racer",
+          "Vi_Backpack_Glow.dds",
+          "Vi_Blue_Ring.dds",
+          "Vi_Racer_Backpack_Glow.dds",
+          "Vi_Racer_Passive_Ring.dds",
+          "ViRacer"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "alphaslice.tga",
+          "color-beacontrail32.tga",
+          "orbglow_03.tga",
+          "Vi_Backpack_Glow.dds",
+          "Vi_Blue_Ring.dds",
+          "Vi_Racer_Backpack_Glow.dds",
+          "Vi_Racer_Passive_Ring.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Passive_Buff.troybin": {
+        "strings": [
+          "color-beacontrail32.tga",
+          "Simple",
+          "slice",
+          "Vi_Passive_AlphaSlice.dds"
+        ],
+        "dependencies": [
+          "color-beacontrail32.tga",
+          "Vi_Passive_AlphaSlice.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Passive_Buff_DeActivate.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "Complex",
+          "drag",
+          "Flare-Rainbow_orange_04.dds",
+          "flash",
+          "flash_racer",
+          "Janna_E_Shield_Break.sco",
+          "noise",
+          "Simple",
+          "sparks-orange.tga",
+          "sparks1",
+          "sphereBreak",
+          "swirl",
+          "Vi_Pass_DeBuff_squigeles.tga",
+          "Vi_Passive_DeActivate_Child.troy",
+          "Vi_Racer_Anime_Impact.dds",
+          "VIRacer"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-hotsparks.tga",
+          "Flare-Rainbow_orange_04.dds",
+          "Janna_E_Shield_Break.sco",
+          "sparks-orange.tga",
+          "Vi_Pass_DeBuff_squigeles.tga",
+          "Vi_Passive_DeActivate_Child.troy",
+          "Vi_Racer_Anime_Impact.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Passive_DeActivate_Child.troybin": {
+        "strings": [
+          "alphaslice.tga",
+          "color-beacontrail32.tga",
+          "Simple",
+          "slice"
+        ],
+        "dependencies": [
+          "alphaslice.tga",
+          "color-beacontrail32.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_passive_Hand_L.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "electric",
+          "Simple",
+          "skarner_plasma_electricity_01.tga"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "skarner_plasma_electricity_01.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_passive_Hand_R.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "electric",
+          "Simple",
+          "skarner_plasma_electricity_01.tga"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "skarner_plasma_electricity_01.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Passive_Ready.troybin": {
+        "strings": [
+          "color-rampdown.tga",
+          "Simple",
+          "swoosh",
+          "Vi_Passive_Swoosh.dds"
+        ],
+        "dependencies": [
+          "color-rampdown.tga",
+          "Vi_Passive_Swoosh.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_passive_ready_Hand_L.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "arm",
+          "circleflares",
+          "color-bellcurve.tga",
+          "Simple",
+          "Vi_Arm_Cylnder.sco",
+          "Void_FG_Lightning.tga",
+          "waypoint_ring_05.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-bellcurve.tga",
+          "Vi_Arm_Cylnder.sco",
+          "Void_FG_Lightning.tga",
+          "waypoint_ring_05.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_passive_ready_Hand_R.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "arm",
+          "circleflares",
+          "color-bellcurve.tga",
+          "color-flames.tga",
+          "FlameAccel",
+          "FlameAttract",
+          "FlameDrag",
+          "Simple",
+          "Vi_Arm_Cylnder.sco",
+          "Vi_Plasma_Flames_01.tga",
+          "Void_FG_Lightning.tga",
+          "waypoint_ring_05.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-bellcurve.tga",
+          "color-flames.tga",
+          "Vi_Arm_Cylnder.sco",
+          "Vi_Plasma_Flames_01.tga",
+          "Void_FG_Lightning.tga",
+          "waypoint_ring_05.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Passive_Shield.troybin": {
+        "strings": [
+          "alphaslice.tga",
+          "AlphaStrike_prison__ball__p-rgba.tga",
+          "color-beacontrail32.tga",
+          "High",
+          "nnn",
+          "ring",
+          "shield_inner",
+          "Simple",
+          "sphere_01.sco",
+          "Vi_Blue_Ring.dds"
+        ],
+        "dependencies": [
+          "alphaslice.tga",
+          "AlphaStrike_prison__ball__p-rgba.tga",
+          "color-beacontrail32.tga",
+          "sphere_01.sco",
+          "Vi_Blue_Ring.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_Channel_01.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "arm",
+          "Complex",
+          "High",
+          "Vi_Arm_Cylnder.sco",
+          "Vi_Q_Speed_lines.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Vi_Arm_Cylnder.sco",
+          "Vi_Q_Speed_lines.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_Channel_02.troybin": {
+        "strings": [
+          "circleflares",
+          "color-bellcurve.tga",
+          "Simple",
+          "suckrays",
+          "Vi_Spark.tga",
+          "waypoint_ring_05.tga"
+        ],
+        "dependencies": [
+          "color-bellcurve.tga",
+          "Vi_Spark.tga",
+          "waypoint_ring_05.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_Channel_L.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "circleflares",
+          "color-bellcurve.tga",
+          "color-rampdown.tga",
+          "color-ringdust.tga",
+          "color-steam.tga",
+          "Drag",
+          "ezreal_pulsefire_flares_b01.tga",
+          "ezreal_pulsefire_rainbow_ring.tga",
+          "flash",
+          "gemglow.tga",
+          "glow",
+          "Glows.tga",
+          "glowy",
+          "lensflare",
+          "lofog01.tga",
+          "Noise",
+          "powerup_glow",
+          "Simple",
+          "soraka_dust_dense.tga",
+          "steam",
+          "SteamAccel",
+          "suckrays",
+          "Vi_Spark.tga",
+          "Vi_W_HandGlow_ColorMap.tga",
+          "ViRacer",
+          "waypoint_ring_05.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "color-bellcurve.tga",
+          "color-rampdown.tga",
+          "color-ringdust.tga",
+          "color-steam.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "ezreal_pulsefire_rainbow_ring.tga",
+          "gemglow.tga",
+          "Glows.tga",
+          "lofog01.tga",
+          "soraka_dust_dense.tga",
+          "Vi_Spark.tga",
+          "Vi_W_HandGlow_ColorMap.tga",
+          "waypoint_ring_05.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_Expire.troybin": {
+        "strings": [
+          "acidsmoketrail32.tga",
+          "BurningFuse.tga",
+          "color-base32.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-randomsmokelife32.tga",
+          "color-sparks2.tga",
+          "color-steam.tga",
+          "Drag",
+          "drag2",
+          "FireHit.tga",
+          "Flame",
+          "FlameSparks",
+          "lofog01.tga",
+          "noise",
+          "Noise",
+          "Play_sfx_Vi_ViQ_buffdeactivate",
+          "Simple",
+          "smoketrail",
+          "sparkhit",
+          "sparks-orange.tga",
+          "sparks1",
+          "sparks2",
+          "SparksAccel",
+          "SparksDrag",
+          "steam",
+          "SteamAccel"
+        ],
+        "dependencies": [
+          "acidsmoketrail32.tga",
+          "BurningFuse.tga",
+          "color-base32.tga",
+          "color-hotsparks.tga",
+          "color-incinerate.tga",
+          "color-randomsmokelife32.tga",
+          "color-sparks2.tga",
+          "color-steam.tga",
+          "FireHit.tga",
+          "lofog01.tga",
+          "sparks-orange.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_Fist_Shockwave_L.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "arm",
+          "FioraShield.sco",
+          "TvT",
+          "Vi_SpeedCloud.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "FioraShield.sco",
+          "Vi_SpeedCloud.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_Minion_tar.troybin": {
+        "strings": [
+          "alpha_18.tga",
+          "color-incinerate.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "firehit",
+          "FireHit.tga",
+          "flash",
+          "Play_sfx_Vi_ViQ_hit_minion",
+          "Simple",
+          "sparks",
+          "Vi_Q_Ring.tga"
+        ],
+        "dependencies": [
+          "alpha_18.tga",
+          "color-incinerate.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "FireHit.tga",
+          "Vi_Q_Ring.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_mis.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "Aura_Self_02.tga",
+          "blue_speed_Skin02",
+          "color-hold.tga",
+          "color-overdrivelines.tga",
+          "color-rampdown32_05.tga",
+          "color-rampup32.tga",
+          "color-smoke32_07.tga",
+          "color-sparks2.tga",
+          "Debris",
+          "DebrisAccel",
+          "dirt_spikes",
+          "dirtbits_sooty.tga",
+          "distort-heat.tga",
+          "distortion",
+          "Dust",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "ezreal_shockwave_ring_a01.tga",
+          "FioraShield.sco",
+          "FioraShield.tga",
+          "firespeed",
+          "FlameSparks",
+          "flare-Rainbow_purp_01.tga",
+          "groundtrench_32.tga",
+          "Low",
+          "PPP",
+          "Simple",
+          "SmokeDrag",
+          "SmokeNoise",
+          "sparks.tga",
+          "SparksAccel",
+          "SparksDrag",
+          "speed",
+          "speed2",
+          "speed_black",
+          "Speed_impact",
+          "Speed_impact_racer",
+          "Speed_impact_racer2",
+          "Speed_impact_racer3",
+          "speed_manga",
+          "speed_manga_black",
+          "speed_racer",
+          "speed_small",
+          "speed_small_racer",
+          "star",
+          "trench",
+          "Vi_Impact_01.dds",
+          "Vi_Impact_03.dds",
+          "Vi_Q_Dash_Head.dds",
+          "Vi_Q_Dash_Head_Circle.sco",
+          "VI_Q_Dash_Hot_Center.dds",
+          "Vi_Q_Dash_SonicBoom.dds",
+          "Vi_Q_Dirt_KickUp.dds",
+          "Vi_Q_Dust_ColorMap.dds",
+          "Vi_Q_mis_Child.troy",
+          "VI_Q_speed_cone_center_01.tga",
+          "Vi_Racer_Backpack_Glow.dds",
+          "Vi_Racer_Q_Dash_Head.dds",
+          "Vi_Racer_Q_Dash_Radial.dds",
+          "Vi_Racer_Q_mis_Child.troy",
+          "Vi_Shockwave_02.dds",
+          "Vi_Shockwave_03.dds",
+          "Vi_Skin02_Q_cone_01.sco",
+          "Vi_skin02_Q_symbol.tga",
+          "Vi_SmokePuff_02.dds",
+          "ViRacer",
+          "ViSkin02",
+          "xxx"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "Aura_Self_02.tga",
+          "color-hold.tga",
+          "color-overdrivelines.tga",
+          "color-rampdown32_05.tga",
+          "color-rampup32.tga",
+          "color-smoke32_07.tga",
+          "color-sparks2.tga",
+          "dirtbits_sooty.tga",
+          "distort-heat.tga",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "ezreal_shockwave_ring_a01.tga",
+          "FioraShield.sco",
+          "FioraShield.tga",
+          "flare-Rainbow_purp_01.tga",
+          "groundtrench_32.tga",
+          "sparks.tga",
+          "Vi_Impact_01.dds",
+          "Vi_Impact_03.dds",
+          "Vi_Q_Dash_Head.dds",
+          "Vi_Q_Dash_Head_Circle.sco",
+          "VI_Q_Dash_Hot_Center.dds",
+          "Vi_Q_Dash_SonicBoom.dds",
+          "Vi_Q_Dirt_KickUp.dds",
+          "Vi_Q_Dust_ColorMap.dds",
+          "Vi_Q_mis_Child.troy",
+          "VI_Q_speed_cone_center_01.tga",
+          "Vi_Racer_Backpack_Glow.dds",
+          "Vi_Racer_Q_Dash_Head.dds",
+          "Vi_Racer_Q_Dash_Radial.dds",
+          "Vi_Racer_Q_mis_Child.troy",
+          "Vi_Shockwave_02.dds",
+          "Vi_Shockwave_03.dds",
+          "Vi_Skin02_Q_cone_01.sco",
+          "Vi_skin02_Q_symbol.tga",
+          "Vi_SmokePuff_02.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_mis_Child.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "color-bellcurve.tga",
+          "color-rampdown32.tga",
+          "color-smoke32_07.tga",
+          "flare-Rainbow_purp_01.tga",
+          "flash",
+          "Graves_ChargedShot_rainbow_mis.dds",
+          "ground_glow",
+          "lines",
+          "lines_Skin02",
+          "Simple",
+          "small_red_glow.dds",
+          "streaks",
+          "Vi_Skin02_Q_Speed_Lines.tga",
+          "Vi_Vert_Slash.dds",
+          "ViSkin02"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "color-bellcurve.tga",
+          "color-rampdown32.tga",
+          "color-smoke32_07.tga",
+          "flare-Rainbow_purp_01.tga",
+          "Graves_ChargedShot_rainbow_mis.dds",
+          "small_red_glow.dds",
+          "Vi_Skin02_Q_Speed_Lines.tga",
+          "Vi_Vert_Slash.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_Skin_Swap.troybin": {
+        "strings": [
+          "base",
+          "color-hold.tga",
+          "missing_instant.dds",
+          "racer",
+          "shyvana_shadow_fire_ball.tga",
+          "Simple",
+          "Skin03",
+          "Vi_Q_TxtSwap.dds",
+          "Vi_Skin02_skin_swap.tga",
+          "ViRacer",
+          "ViSkin02"
+        ],
+        "dependencies": [
+          "color-hold.tga",
+          "missing_instant.dds",
+          "shyvana_shadow_fire_ball.tga",
+          "Vi_Q_TxtSwap.dds",
+          "Vi_Skin02_skin_swap.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Q_tar.troybin": {
+        "strings": [
+          "alpha_18.tga",
+          "color-incinerate.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "firehit",
+          "FireHit.tga",
+          "flash",
+          "Play_sfx_Vi_ViQ_hit_champ",
+          "Simple",
+          "sparks",
+          "Vi_Q_Ring.tga"
+        ],
+        "dependencies": [
+          "alpha_18.tga",
+          "color-incinerate.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "FireHit.tga",
+          "Vi_Q_Ring.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Cas_start.troybin": {
+        "strings": [
+          "alpha_18.tga",
+          "alpha_20.tga",
+          "Aura_Self_02.dds",
+          "circleflares",
+          "flash",
+          "manga",
+          "Simple",
+          "Vi_Impact_01.dds",
+          "ViSkin02",
+          "waypoint_ring_05.tga"
+        ],
+        "dependencies": [
+          "alpha_18.tga",
+          "alpha_20.tga",
+          "Aura_Self_02.dds",
+          "Vi_Impact_01.dds",
+          "waypoint_ring_05.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_ChargedRun_impact.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "Aura_Self_02.tga",
+          "distort-heat.tga",
+          "distortion",
+          "dust",
+          "Simple",
+          "Simples",
+          "SmokeDrag",
+          "SmokeNoise",
+          "Vi_Q_Dust_ColorMap.dds",
+          "Vi_SmokePuff_02.dds"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "Aura_Self_02.tga",
+          "distort-heat.tga",
+          "Vi_Q_Dust_ColorMap.dds",
+          "Vi_SmokePuff_02.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Dash_tar.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "alpha_18.tga",
+          "basesound",
+          "black.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "fireball",
+          "flash",
+          "Play_sfx_Vi_ViRDunkTarget_buffactivate",
+          "Play_sfx_ViSkin02_ViRDunkTarget_buffactivate",
+          "ring_white.tga",
+          "rings",
+          "Simple",
+          "skin02sound",
+          "sparks",
+          "Vi_Base_R_Fireball_Spike.sco",
+          "VI_Q_Dash_Hot_Center.dds",
+          "Vi_R_Jump_Smoke_Spike.dds",
+          "ViSkin02"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "alpha_18.tga",
+          "black.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "ring_white.tga",
+          "Vi_Base_R_Fireball_Spike.sco",
+          "VI_Q_Dash_Hot_Center.dds",
+          "Vi_R_Jump_Smoke_Spike.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_DunkTarget_tar.troybin": {
+        "strings": [
+          "alpha_02.tga",
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "Aura_Self.tga",
+          "Blast_Decal",
+          "bubble",
+          "burnt_ground",
+          "Chogath_Battlecast_Decal.tga",
+          "color-bellcurve32.tga",
+          "color-firemissile.tga",
+          "color-hold.tga",
+          "color-rampdown.tga",
+          "ddd",
+          "dirt_spikes1",
+          "DirtBits",
+          "DirtBits_earthy.tga",
+          "disintegrate-light.tga",
+          "dist_wave",
+          "distort-soft-shockwave.tga",
+          "distort-wave.tga",
+          "distortion",
+          "dome",
+          "Drag",
+          "FireHit.tga",
+          "flash_ground",
+          "gravity",
+          "Low",
+          "manga",
+          "PPP",
+          "rainbowflash.tga",
+          "shockwave",
+          "shockwave_racer",
+          "Simple",
+          "sparks",
+          "TT_Spider_Dirt_Spike.tga",
+          "vert_spike",
+          "Vi_Impact_01.tga",
+          "Vi_R_Dirt_Spike_ColorMap.dds",
+          "Vi_R_Ground_Decal_Colormap.dds",
+          "Vi_R_Hilt.sco",
+          "Vi_R_Impact_Saucer.sco",
+          "Vi_R_Jump_Smoke_Spike.dds",
+          "Vi_R_Saucer_Nova.dds",
+          "Vi_R_Shockwave_Bubble.dds",
+          "Vi_Racer_Shockwave_01.dds",
+          "Vi_Shockwave_01.dds",
+          "VIRacer"
+        ],
+        "dependencies": [
+          "alpha_02.tga",
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "Aura_Self.tga",
+          "Chogath_Battlecast_Decal.tga",
+          "color-bellcurve32.tga",
+          "color-firemissile.tga",
+          "color-hold.tga",
+          "color-rampdown.tga",
+          "DirtBits_earthy.tga",
+          "disintegrate-light.tga",
+          "distort-soft-shockwave.tga",
+          "distort-wave.tga",
+          "FireHit.tga",
+          "rainbowflash.tga",
+          "TT_Spider_Dirt_Spike.tga",
+          "Vi_Impact_01.tga",
+          "Vi_R_Dirt_Spike_ColorMap.dds",
+          "Vi_R_Ground_Decal_Colormap.dds",
+          "Vi_R_Hilt.sco",
+          "Vi_R_Impact_Saucer.sco",
+          "Vi_R_Jump_Smoke_Spike.dds",
+          "Vi_R_Saucer_Nova.dds",
+          "Vi_R_Shockwave_Bubble.dds",
+          "Vi_Racer_Shockwave_01.dds",
+          "Vi_Shockwave_01.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Fist_R.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "alpha_18.tga",
+          "alpha_20.tga",
+          "circleflares",
+          "color-rampup.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "ezreal_pulsefire_rays_shaft.tga",
+          "flash",
+          "Low",
+          "manga",
+          "rays",
+          "Simple",
+          "star",
+          "starfilter2.tga",
+          "Vi_Impact_01.tga",
+          "ViRacer",
+          "waypoint_ring_05.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "alpha_18.tga",
+          "alpha_20.tga",
+          "color-rampup.tga",
+          "ezreal_pulsefire_flares_b01.tga",
+          "ezreal_pulsefire_rays_shaft.tga",
+          "starfilter2.tga",
+          "Vi_Impact_01.tga",
+          "waypoint_ring_05.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Indicator_Child.troybin": {
+        "strings": [
+          "color-redblink.tga",
+          "color-ringdust.tga",
+          "color-steam.tga",
+          "Drag",
+          "gemglow.tga",
+          "glow",
+          "Glows.tga",
+          "lofog01.tga",
+          "Noise",
+          "Simple",
+          "steam_l",
+          "steam_r",
+          "SteamAccel"
+        ],
+        "dependencies": [
+          "color-redblink.tga",
+          "color-ringdust.tga",
+          "color-steam.tga",
+          "gemglow.tga",
+          "Glows.tga",
+          "lofog01.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Jump.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "color-smoke32_07.tga",
+          "ezreal_flare_streak_a01.tga",
+          "launch_smoke",
+          "Simple",
+          "SmokeDrag",
+          "sparkle",
+          "Vi_SmokePuffs_01.dds"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "color-smoke32_07.tga",
+          "ezreal_flare_streak_a01.tga",
+          "Vi_SmokePuffs_01.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Jump_Arm_Wpn_Trail.troybin": {
+        "strings": [
+          "color-rampdown.tga",
+          "Vi_BasicAttack_2.tga",
+          "Vi_R_Jump_Mesh.sco",
+          "WeaponTrail"
+        ],
+        "dependencies": [
+          "color-rampdown.tga",
+          "Vi_BasicAttack_2.tga",
+          "Vi_R_Jump_Mesh.sco"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Knockback_tar.troybin": {
+        "strings": [
+          "alpha_18.tga",
+          "color-firemissile.tga",
+          "color-rampdown.tga",
+          "FireHit.tga",
+          "flash",
+          "Flash_01",
+          "flashorange.tga",
+          "ring_white.tga",
+          "rings",
+          "Simple",
+          "solar_tag.tga",
+          "sparks",
+          "SparksDrag",
+          "VIracer"
+        ],
+        "dependencies": [
+          "alpha_18.tga",
+          "color-firemissile.tga",
+          "color-rampdown.tga",
+          "FireHit.tga",
+          "flashorange.tga",
+          "ring_white.tga",
+          "solar_tag.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Land.troybin": {
+        "strings": [
+          "basesound",
+          "black.tga",
+          "Dust",
+          "Hit_Flash",
+          "Jayce_Color_Fade2.tga",
+          "Play_sfx_Vi_ViR_land",
+          "Play_sfx_ViSkin02_ViR_land",
+          "Simple",
+          "skin02sound",
+          "smoke_clouds_2x2_dense.tga",
+          "SowFlash.tga",
+          "TT_Spider_Dust_RGB.tga",
+          "ViSkin02"
+        ],
+        "dependencies": [
+          "black.tga",
+          "Jayce_Color_Fade2.tga",
+          "smoke_clouds_2x2_dense.tga",
+          "SowFlash.tga",
+          "TT_Spider_Dust_RGB.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Laser_Target.troybin": {
+        "strings": [
+          "beam1",
+          "beam2",
+          "color-lasersight_02.tga",
+          "LaserSight_beam.tga"
+        ],
+        "dependencies": [
+          "color-lasersight_02.tga",
+          "LaserSight_beam.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Pillar.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "FocusCone",
+          "High",
+          "Play_sfx_Vi_ViRDunkTarget_spin",
+          "Vi_SpeedLines.dds"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "Vi_SpeedLines.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Run.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "color-overdrivelines.tga",
+          "color-rampup32.tga",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "FioraShield.sco",
+          "lines",
+          "Sonic_Mesh",
+          "speed",
+          "speed2",
+          "Vi_Muzzle_Flare.sco",
+          "Vi_Muzzle_Flare.tga",
+          "VI_Q_Dash_Hot_Center.dds",
+          "Vi_Skin02_R_speedlines.tga",
+          "Vi_Skin02_Speed_01",
+          "Vi_Skin02_Speed_02",
+          "Vi_SpeedCloud.tga",
+          "Vi_SpeedLines.tga",
+          "ViSkin02",
+          "xxx4"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "color-overdrivelines.tga",
+          "color-rampup32.tga",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "FioraShield.sco",
+          "Vi_Muzzle_Flare.sco",
+          "Vi_Muzzle_Flare.tga",
+          "VI_Q_Dash_Hot_Center.dds",
+          "Vi_Skin02_R_speedlines.tga",
+          "Vi_SpeedCloud.tga",
+          "Vi_SpeedLines.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Run_Sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_Vi_ViR_buffactivate"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Skin_Swap.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "Simple",
+          "speed_lines",
+          "speed_lines_racer",
+          "Vi_R_Run_SpeedLines_Blue.dds",
+          "Vi_Racer_R_Run_SpeedLines_Purp.dds",
+          "ViRacer"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Vi_R_Run_SpeedLines_Blue.dds",
+          "Vi_Racer_R_Run_SpeedLines_Purp.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Skin_Swap_Jump.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "Simple",
+          "speed_lines",
+          "Vi_R_Run_SpeedLines.dds",
+          "VIracer"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Vi_R_Run_SpeedLines.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_target_Indicator.troybin": {
+        "strings": [
+          "High",
+          "pulse",
+          "Simple",
+          "target",
+          "Vi_Light_Red_Ring.dds",
+          "Vi_R_Target_Ring.dds"
+        ],
+        "dependencies": [
+          "Vi_Light_Red_Ring.dds",
+          "Vi_R_Target_Ring.dds"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_target_Indicator_02.troybin": {
+        "strings": [
+          "circleflares",
+          "color-bellcurve.tga",
+          "Play_sfx_Vi_ViRTarget_buffactivate",
+          "Simple",
+          "suckrays",
+          "Vi_Spark.tga",
+          "waypoint_ring_05.tga"
+        ],
+        "dependencies": [
+          "color-bellcurve.tga",
+          "Vi_Spark.tga",
+          "waypoint_ring_05.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_R_Voice_Special.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_vo_Vi_Interactive_Interactive3DChampionSpecific21",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/vi_skin02_emote_taunt2_sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_ViSkin02_Emote_Taunt3D2_buffactivate",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_skin02_R_Run_Sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_ViSkin02_ViR_buffactivate"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/vi_skin02_recall_start_sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_ViSkin02_recall_leadin",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Base/Particles/Vi_Teamwork_Sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_vo_Vi_Interactive_Interactive3DChampionSpecific31",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_beam_start_sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_ViRacer_Beam_windup",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_E_Shockwave_Child.troybin": {
+        "strings": [
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "distort-heat.tga",
+          "distortionHit",
+          "lines",
+          "Play_sfx_ViRacer_ViEFx_missilelaunch",
+          "Simple",
+          "Vi_Shockwave_Colormap.tga",
+          "Vi_Shockwave_Lines_01.dds"
+        ],
+        "dependencies": [
+          "Aura_self.tga",
+          "color-bellcurve32.tga",
+          "distort-heat.tga",
+          "Vi_Shockwave_Colormap.tga",
+          "Vi_Shockwave_Lines_01.dds"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_emote_death_sound.troybin": {
+        "strings": [
+          "black.tga",
+          "empty",
+          "Play_sfx_ViRacer_Death3D_cast",
+          "Simple"
+        ],
+        "dependencies": [
+          "black.tga"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_Q_Channel_L.troybin": {
+        "strings": [
+          "Flare-Rainbow_purp_01.tga",
+          "glow",
+          "High",
+          "Simple"
+        ],
+        "dependencies": [
+          "Flare-Rainbow_purp_01.tga"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_Q_mis.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "Aura_Self_02.tga",
+          "blast_nova_bunny_05.tga",
+          "color-hold.tga",
+          "color-rampdown32_05.tga",
+          "Debris",
+          "DebrisAccel",
+          "dirt_spikes",
+          "dirtbits_sooty.tga",
+          "distort-heat.tga",
+          "distortion",
+          "Dust",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "ezreal_shockwave_ring_a01.tga",
+          "FFF",
+          "firespeed",
+          "FlameSparks",
+          "groundtrench_32.tga",
+          "Low",
+          "PPP",
+          "Simple",
+          "Smoke08.tga",
+          "SmokeDrag",
+          "SmokeNoise",
+          "speed",
+          "speed2",
+          "speed_black",
+          "Speed_impact",
+          "speed_manga",
+          "speed_manga_black",
+          "speed_small",
+          "trench",
+          "Vi_Impact_01.dds",
+          "Vi_Q_Dash_Head.dds",
+          "Vi_Q_Dash_Head_Circle.sco",
+          "Vi_Q_Dash_SonicBoom.dds",
+          "Vi_Q_Dirt_KickUp.dds",
+          "Vi_Q_Dust_ColorMap.dds",
+          "Vi_Racer_Q_mis_Child.troy",
+          "Vi_Shockwave_02.dds",
+          "Vi_Shockwave_03.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "Aura_Self_02.tga",
+          "blast_nova_bunny_05.tga",
+          "color-hold.tga",
+          "color-rampdown32_05.tga",
+          "dirtbits_sooty.tga",
+          "distort-heat.tga",
+          "ezreal_pulsefire_muzzle_cone.sco",
+          "ezreal_shockwave_ring_a01.tga",
+          "groundtrench_32.tga",
+          "Smoke08.tga",
+          "Vi_Impact_01.dds",
+          "Vi_Q_Dash_Head.dds",
+          "Vi_Q_Dash_Head_Circle.sco",
+          "Vi_Q_Dash_SonicBoom.dds",
+          "Vi_Q_Dirt_KickUp.dds",
+          "Vi_Q_Dust_ColorMap.dds",
+          "Vi_Racer_Q_mis_Child.troy",
+          "Vi_Shockwave_02.dds",
+          "Vi_Shockwave_03.dds"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_Q_mis_Child.troybin": {
+        "strings": [
+          "color-bellcurve.tga",
+          "color-smoke32_07.tga",
+          "flare-Rainbow_purp_01.tga",
+          "flash",
+          "lines",
+          "Simple",
+          "Vi_Racer_Q_lines.dds"
+        ],
+        "dependencies": [
+          "color-bellcurve.tga",
+          "color-smoke32_07.tga",
+          "flare-Rainbow_purp_01.tga",
+          "Vi_Racer_Q_lines.dds"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_R_Pillar.troybin": {
+        "strings": [
+          "alpha_20.tga",
+          "FocusCone",
+          "FocusCone_rainbow",
+          "High",
+          "Play_sfx_ViRacer_ViRDunkTarget_spin",
+          "Vi_Racer_SpeedLines.dds",
+          "Vi_SpeedLines.dds"
+        ],
+        "dependencies": [
+          "alpha_20.tga",
+          "Vi_Racer_SpeedLines.dds",
+          "Vi_SpeedLines.dds"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_Recall_Anime_Shine.troybin": {
+        "strings": [
+          "ezreal_pulsefire_flare_a01.tga",
+          "glow",
+          "High",
+          "Simple"
+        ],
+        "dependencies": [
+          "ezreal_pulsefire_flare_a01.tga"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_Recall_Anime_Shine_Big.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "burst",
+          "glow",
+          "High",
+          "Simple",
+          "starfilter.dds",
+          "starfilter2.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "starfilter.dds",
+          "starfilter2.tga"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_Recall_Teleport.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "cylinder_rainbow",
+          "defilehelix.sco",
+          "ezreal_pulsefire_arcaneshift_cylinder_rainbow.dds",
+          "saucer6.sco",
+          "swirl",
+          "Vi_Racer_Teleport_Lines.dds"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "alpha_20.tga",
+          "defilehelix.sco",
+          "ezreal_pulsefire_arcaneshift_cylinder_rainbow.dds",
+          "saucer6.sco",
+          "Vi_Racer_Teleport_Lines.dds"
+        ]
+      },
+      "Skins/Skin01/Particles/Vi_Racer_W_Activate_R.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "Flare-Rainbow_purp_01.tga",
+          "glow",
+          "High",
+          "Simple"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Flare-Rainbow_purp_01.tga"
+        ]
+      },
+      "Skins/Skin02/Particles/Vi_Skin02_E_Cas.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "Aura_self.tga",
+          "color-addflame.tga",
+          "color-bellcurve32.tga",
+          "color-frostsmoke32.tga",
+          "color-rampdown.tga",
+          "color-sparks2.tga",
+          "Distort",
+          "distort-heat.tga",
+          "flames02.tga",
+          "FlameSparks",
+          "Flash",
+          "Gangplank_SpecialForces_muzzle_flash.tga",
+          "graves_mafia_muzzle_cone.sco",
+          "High",
+          "InfernalGuardian02.tga",
+          "Medium",
+          "Muzzle",
+          "Simple",
+          "Smoke",
+          "smoke_02",
+          "SmokeDrag",
+          "Sparks",
+          "sparks.tga",
+          "Sparks_forward",
+          "SparksNoise",
+          "TristanaShot.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Aura_self.tga",
+          "color-addflame.tga",
+          "color-bellcurve32.tga",
+          "color-frostsmoke32.tga",
+          "color-rampdown.tga",
+          "color-sparks2.tga",
+          "distort-heat.tga",
+          "flames02.tga",
+          "Gangplank_SpecialForces_muzzle_flash.tga",
+          "graves_mafia_muzzle_cone.sco",
+          "InfernalGuardian02.tga",
+          "sparks.tga",
+          "TristanaShot.tga"
+        ]
+      },
+      "Skins/Skin02/Particles/Vi_Skin02_flash_02.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "Blitzcrank_Skin08_W_flash_01.tga",
+          "Blitzcrank_Skin08_W_flash_02.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Blitzcrank_Skin08_W_flash_01.tga",
+          "Blitzcrank_Skin08_W_flash_02.tga"
+        ]
+      },
+      "Skins/Skin02/Particles/Vi_Skin02_R_flash_01.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "red",
+          "Simple",
+          "Vi_Skin02_R_flash_red.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Vi_Skin02_R_flash_red.tga"
+        ]
+      },
+      "Skins/Skin02/Particles/Vi_Skin02_R_flash_02.troybin": {
+        "strings": [
+          "alpha_12.tga",
+          "blue",
+          "Simple",
+          "Vi_Skin02_R_flash_blue.tga"
+        ],
+        "dependencies": [
+          "alpha_12.tga",
+          "Vi_Skin02_R_flash_blue.tga"
+        ]
+      }
+    }
+  },
+  "diagnostics": [
+    {
+      "severity": "info",
+      "file": "PRELOAD graph",
+      "message": "7 external or missing preload dependencies"
+    }
+  ]
+}
