@@ -1,0 +1,16 @@
+{"ViE;f1":{"link":"@text","coeff":"14/12.5/11/9.5/8"}}
+{"ViE;f2":{"link":"","coeff":""}}
+{"ViE;f3":{"link":"attackdamage","coeff":"1.15"}}
+{"ViE;f4":{"link":"","coeff":""}}
+{"ViQ;f1":{"link":"bonusattackdamage","coeff":"1.4"}}
+{"ViQ;f2":{"link":"","coeff":""}}
+{"ViQ;f3":{"link":"","coeff":""}}
+{"ViQ;f4":{"link":"","coeff":""}}
+{"ViW;f1":{"link":"@special.viw","coeff":"35"}}
+{"ViW;f2":{"link":"","coeff":""}}
+{"ViW;f3":{"link":"","coeff":""}}
+{"ViW;f4":{"link":"","coeff":""}}
+{"ViR;f1":{"link":"","coeff":""}}
+{"ViR;f2":{"link":"","coeff":""}}
+{"ViR;f3":{"link":"","coeff":""}}
+{"ViR;f4":{"link":"","coeff":""}}
