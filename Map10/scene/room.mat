@@ -1,0 +1,1229 @@
+[MaterialBegin]
+Name= defaultShader
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 0
+Color24= 255 0 0
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_lambert26913
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= decal_shrine_base.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= TT_Jungle1
+Flags= texture_gouraud_
+EmissiveColor= 0 -2147483648 -2147483648
+UVScroll = 5.52223e-019 -4.66766e-027
+DisableBackfaceCulling = 1
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 0
+Color24= 0 0 0
+[MaterialEnd]
+
+[MaterialBegin]
+Name= TT_Lanes1
+Flags= texture_gouraud_
+EmissiveColor= 0 -2147483648 -2147483648
+UVScroll = 5.52223e-019 -4.67183e-027
+DisableBackfaceCulling = 1
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 0
+Color24= 0 0 0
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27032
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= broken_bridge.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= aipathlambert
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Nexus_order_
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nexus_diff.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Nexxus_Chaos_
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= chaos_nexus_diff.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= same_lambert2
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= inhibitor_diff.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Chaos_inhibitor_
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= chaos_inhibitor_diff.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26882
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_shrine_base_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= BRAM3_alpha2
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_vine_twisted_03.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26914
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_speed_shrine.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26881
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_shrine_fence_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Nature_Brush1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= decal_grass_tufts_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= BRAM2
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_brambels_group_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= BRAM4
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_brambels_group_02.psd
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Vine_Twisted_03_alpha1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_vine_twisted_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= MushroomPatch02_
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_mushroompatch_05.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= MUSH2
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_mushroom_simple_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Mash2
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_mashroom_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27006
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_mushrooms_small_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= MUSH4
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_mushroom_simple_03.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Spiral_Plants
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_plant_spiraly1.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Tree_Face2
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_face_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Tree_Face1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_face_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Tree10
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_face_03.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27004
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_branches_brown_03.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26853
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_bush_brown_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Wall_of_Grass
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_gank_grass_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lanetowerx_decalVersion3_no_shadow
+Flags= texture_gouraud_ alphaop uvclamp
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= decal_tower_base_04.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_StepsDown_decalVersion3_no_shadow
+Flags= texture_gouraud_ alphaop uvclamp
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_ground_steps.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Decal_MudPath_decalVersion3_no_shadow
+Flags= texture_gouraud_ alphaop uvclamp
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= decal_mud_path_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Wall_Of_Grass
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Branch1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_epicbranch_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Branch2
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_epicbranch_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27038
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_epic_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= ETree2
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_epictree_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= ETree3
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_epictree_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= EpicT2_alpha
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_epic_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Trees
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_trees_generic_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= BRAM3_alpha
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_vine_twisted_03.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26992
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_spider.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Tree20
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_face_03.psd
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Ground1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= tile_vegetation_deadmossy_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= VertDirt
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= tile_vertical_dirt_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26962
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= tile_mud_and_wall_03.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_lambert26926
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_walls_broken.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_Structure_Wall_Crypt_Base
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_long_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_bridge_statues_new_Structure_Wall_Long_Rail13
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_long_rail_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_bridge_statues_new_Structure_Base_Brazier4
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_base_brazier_top.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= bridge_statues_new_bridge_statues_new_Structure_Wall_Bridge_Column
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_bridge_column.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_Structure_Backdrop_Pillar_tex
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_backdrop_pillar.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Structure_Backdrop_tex
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_backdrop.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Prop_Wall_Statue_Grouped_Structure_Wall_Brazier_tex3
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_brazier.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= TTROOTS
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= tile_roots_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27041
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= prop_gate_metal_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_lambert26962
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_walls_broken_pillar.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= DAMAGE
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_damge_tile_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_jungle_pillar_test1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_walls_broken.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27036
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_statue_scythe_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_Lane_Rubble1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_walls_broken.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_DirtTrim
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_dirt_skirt.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= DirtTrim1_nolm
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_dirt_skirt.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27016
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_lanetrim_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Nature_Web_2_alpha
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_spider_den _foreground_web.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_stairsleft
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_steps.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_stairs_right
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_steps2.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_spider_flloor1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_spider_den_floor.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_den_webs1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_spider_den_webs.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= chaos_base_platform
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_base_platform_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Prop_Hanging_Chain_01_lambert4
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= prop_chain_loop.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26927
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= prop_chain_big.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26944
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= props_items.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27010
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_stump.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= LM_Pebble_stone
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_pebbles.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_forTED2_Structure_Wall_Brazier_Column
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_brazier_column.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Structure_Wall_Crypt_01
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_crypt_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Prop_Wall_Statue_Grouped_Structure_Wall_Crypt_03_new_Structure_Wall_Crypt_05
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_crypt_03.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Prop_Wall_Statue_Grouped_Structure_Wall_Crypt_05
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_crypt_02.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26851
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= prop_gate_metal_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lm_base_stairs
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_base_stairs_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lm_pasted__lambert26848
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_base_inhibs_grnd_05.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lm_pasted__lambert26849
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_base_nexus_grnd_04.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= turret_Chaos_hq
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_statue_chaoshq_turret.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27040SG1
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_statue_base.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27043
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= props_items.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert27044
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_tree_stump.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= Prop_Wall_Statue_Grouped_Structure_Wall_Brazier_tex5
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_wall_brazier.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= RAIL_SUPPORTS_lambert26963
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_walls_broken.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= BRAM3_alpha4
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= nature_vine_twisted_03.tif
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert3
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_base_shop_props.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= lambert26885
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_base_platform_01.dds
+Color24= 204 204 204
+[MaterialEnd]
+
+[MaterialBegin]
+Name= turret_Order_hq
+Flags= texture_gouraud_
+EmissiveColor= 0 0 0
+UVScroll = 0 0
+DisableBackfaceCulling = 0
+ShaderName = Prop
+SimpleShader = 1
+Opacity= 255
+Texture= structure_statue_orderhq_turret.dds
+Color24= 204 204 204
+[MaterialEnd]
+
